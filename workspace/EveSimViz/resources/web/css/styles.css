@@ -1,0 +1,12 @@
+body				{font-family:Arial, Helvetica, sans-serif; font-size:12px;margin:0px 0px 0px 0px;}
+h1					{margin:0; padding:10px 0; font-size:14px}
+.clear			{clear:both}
+.header			{border-bottom:#000 solid 1px; padding:10px 0; height:50px;}
+.header img	{float:left;}
+.header p		{float:right; width:300px;}
+#map				{width:700px; height:520px;margin:0 auto}
+#nodes 			{width:1000px;margin:0 auto; top:-620px; position:relative; z-index:10}
+#orgnodes,
+#updnodes 	{width:488px;float:left;border:#000 solid;padding:60px 5px 0;border-width:0 1px 1px 1px; margin-left:-1px; opacity:0.9; background:#eee url(img/u_a.gif) center top no-repeat}
+#orgnodes 	{width:488px;border-width:0 1px 1px 1px;background-image:url(img/u_b.gif)}
+label		{float: left;width: 130px;}

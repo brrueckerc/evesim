@@ -1,0 +1,1603 @@
+<?xml version="1.0" encoding="ASCII"?>
+<?xml-stylesheet type="text/css" href="../xml.css" ?>
+<NetworkDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="http://www.fh-salzburg.ac.at/NetDesc">
+   <nodes>
+    <node type="null" uri="Leitao, HCG" name="Leitao, HCG">
+      <name>Leitao, HCG</name>
+      <location lat="-22.91" lng="-43.175556" name="null"/>
+      <servicePool type="onOffer">
+        <service id="2209" uri="ISI:000234429900003">
+          <name>Measuring the information content of fracture lines</name>
+          <description>curve matching; jigsaw puzzles; information content; fractals; shape   recognition</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="Stolfi, J" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Stolfi, J" name="Stolfi, J">
+      <name>Stolfi, J</name>
+      <location lat="-22.91" lng="-43.175556" name="null"/>
+      <connections>
+      </connections>
+    </node>
+    <node type="null" uri="Hashida, JC" name="Hashida, JC">
+      <name>Hashida, JC</name>
+      <location lat="-24.1140452" lng="-46.6596103" name="null"/>
+      <servicePool type="onOffer">
+        <service id="5007" uri="ISI:000232262900016">
+          <name>EEG pattern discrimination between salty and sweet taste using adaptive   Gabor transform</name>
+          <description>sensorial analysis; time-frequency; brain; flavors</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="Silva, ACD" type="paperContribution"/>
+        <connection strength="1" to="Souto, S" type="paperContribution"/>
+        <connection strength="1" to="Costa, EJX" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Silva, ACD" name="Silva, ACD">
+      <name>Silva, ACD</name>
+      <location lat="-24.1140452" lng="-46.6596103" name="null"/>
+      <servicePool type="onOffer">
+        <service id="5303" uri="ISI:000232193100003">
+          <name>A wireless floating base sensor network for physiological responses of   livestock</name>
+          <description>equipment; protocol; telemetry; livestock</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="Souto, S" type="paperContribution"/>
+        <connection strength="1" to="Costa, EJX" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Souto, S" name="Souto, S">
+      <name>Souto, S</name>
+      <location lat="-23.5489433" lng="-46.6388182" name="null"/>
+      <connections>
+        <connection strength="1" to="Costa, EJX" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Costa, EJX" name="Costa, EJX">
+      <name>Costa, EJX</name>
+      <location lat="-23.5489433" lng="-46.6388182" name="null"/>
+      <connections>
+      </connections>
+    </node>
+    <node type="USP,EP" uri="Hernandez, ED" name="Hernandez, ED">
+      <name>Hernandez, ED</name>
+      <location lat="-23.5142133" lng="-46.5773876" name="USP,EP"/>
+      <servicePool type="onOffer">
+        <service id="5217" uri="ISI:000232096500010">
+          <name>Non-homogenous neural networks with chaotic recursive nodes:   Connectivity and multi-assemblies structures in recursive processing   elements architectures</name>
+          <description>null</description>
+        </service>
+        <service id="22650" uri="ISI:000188198500004">
+          <name>Analog realization of arbitrary one-dimensional maps</name>
+          <description>bifurcating neuron (BN); coupled map lattice; neural network;   one-dimensional (1-D) map; parametrically coupled map lattice (PCML)</description>
+        </service>
+      </servicePool>
+      <connections>
+      </connections>
+    </node>
+    <node type="USP,IME" uri="da Silva, FSC" name="da Silva, FSC">
+      <name>da Silva, FSC</name>
+      <location lat="39.512816" lng="-87.135511" name="USP,IME"/>
+      <servicePool type="onOffer">
+        <service id="3641" uri="ISI:000233291300023">
+          <name>Agent-based management of responsive environments</name>
+          <description>null</description>
+        </service>
+        <service id="6830" uri="ISI:000231021100006">
+          <name>Towards a logic of perishable propositions</name>
+          <description>probabilistic propositional logic; applied artificial intelligence in   engineering</description>
+        </service>
+        <service id="39077" uri="ISI:000174101700001">
+          <name>On the insufficiency of ontologies: problems in knowledge sharing and   alternative solutions</name>
+          <description>ontologies; knowledge sharing; knowledge representation and inference</description>
+        </service>
+      </servicePool>
+      <connections>
+      </connections>
+    </node>
+    <node type="null" uri="Linhares, A" name="Linhares, A">
+      <name>Linhares, A</name>
+      <location lat="-22.811865" lng="-43.2882803" name="null"/>
+      <servicePool type="onOffer">
+        <service id="6926" uri="ISI:000230964000001">
+          <name>An active symbols theory of chess intuition</name>
+          <description>active symbols; artificial intelligence; chess; cognitive modeling;   psychology of intuition</description>
+        </service>
+        <service id="21929" uri="ISI:000188951700008">
+          <name>Minimization of open orders: application of a re-distribution   coordination policy</name>
+          <description>null</description>
+        </service>
+        <service id="36474" uri="ISI:000176012100009">
+          <name>Connections between cutting-pattern sequencing, VLSI design, and   flexible machines</name>
+          <description>pattern sequencing; flexible machines; VLSI layout; computational   complexity</description>
+        </service>
+      </servicePool>
+      <connections>
+      </connections>
+    </node>
+    <node type="USP,IME" uri="Silva, PJS" name="Silva, PJS">
+      <name>Silva, PJS</name>
+      <location lat="-24.1140452" lng="-46.6596103" name="USP,IME"/>
+      <servicePool type="onOffer">
+        <service id="211" uri="ISI:000236212200001">
+          <name>Double-regularization proximal methods, with complementarity   applications</name>
+          <description>proximal algorithms; variational inequalities; complementarity</description>
+        </service>
+        <service id="631" uri="ISI:000236212200001">
+          <name>Double-regularization proximal methods, with complementarity   applications</name>
+          <description>proximal algorithms; variational inequalities; complementarity</description>
+        </service>
+        <service id="8182" uri="ISI:000230006800005">
+          <name>Feature selection algorithms to find strong genes</name>
+          <description>feature selection; strong genes; gene expression analysis;   high-dimensional problem; small sample size</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="Hashimoto, RF" type="paperContribution"/>
+        <connection strength="1" to="Kim, SC" type="paperContribution"/>
+        <connection strength="1" to="Barrera, J" type="paperContribution"/>
+        <connection strength="1" to="Brandao, LO" type="paperContribution"/>
+        <connection strength="1" to="Suh, E" type="paperContribution"/>
+        <connection strength="1" to="Dougherty, ER" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="USP,IME" uri="Hashimoto, RF" name="Hashimoto, RF">
+      <name>Hashimoto, RF</name>
+      <location lat="-23.5142133" lng="-46.5773876" name="USP,IME"/>
+      <servicePool type="onOffer">
+        <service id="19129" uri="ISI:000221556100005">
+          <name>Growing genetic regulatory networks from seed genes</name>
+          <description>null</description>
+        </service>
+        <service id="19949" uri="ISI:000221556100005">
+          <name>Growing genetic regulatory networks from seed genes</name>
+          <description>null</description>
+        </service>
+        <service id="30156" uri="ISI:000181748800004">
+          <name>A greedy algorithm for decomposing convex structuring elements</name>
+          <description>convex structuring element; decomposition; Minkowski addition; greedy   algorithm</description>
+        </service>
+        <service id="30365" uri="ISI:000181415600002">
+          <name>Efficient selection of feature sets possessing high coefficients of   determination based on incremental determinations</name>
+          <description>coefficient of determination; feature selection; gene microarray;   optimal classifier</description>
+        </service>
+        <service id="40121" uri="ISI:000172960300011">
+          <name>A note on Park and Chins algorithm</name>
+          <description>simply connected set; structuring element; decomposition; Minkowski   addition</description>
+        </service>
+        <service id="40767" uri="ISI:000172295900004">
+          <name>From the sup-decomposition to sequential decompositions</name>
+          <description>W-operators; sup-decomposition; sequential decomposition; basis</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="Kim, SC" type="paperContribution"/>
+        <connection strength="1" to="Barrera, J" type="paperContribution"/>
+        <connection strength="1" to="Brandao, LO" type="paperContribution"/>
+        <connection strength="1" to="Suh, E" type="paperContribution"/>
+        <connection strength="1" to="Dougherty, ER" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Kim, SC" name="Kim, SC">
+      <name>Kim, SC</name>
+      <location lat="38.984605" lng="-77.094586" name="null"/>
+      <connections>
+        <connection strength="1" to="Barrera, J" type="paperContribution"/>
+        <connection strength="1" to="Brandao, LO" type="paperContribution"/>
+        <connection strength="1" to="Suh, E" type="paperContribution"/>
+        <connection strength="1" to="Dougherty, ER" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="USP,BIOINFO" uri="Barrera, J" name="Barrera, J">
+      <name>Barrera, J</name>
+      <location lat="-23.5489433" lng="-46.6388182" name="USP,BIOINFO"/>
+      <servicePool type="onOffer">
+        <service id="18792" uri="ISI:000221786700004">
+          <name>An environment for knowledge discovery in biology</name>
+          <description>knowledge discovery; bioinformatics; microarrays; gene expression;   pattern recognition; databases; high-performance computing</description>
+        </service>
+        <service id="19262" uri="ISI:000221786700004">
+          <name>An environment for knowledge discovery in biology</name>
+          <description>knowledge discovery; bioinformatics; microarrays; gene expression;   pattern recognition; databases; high-performance computing</description>
+        </service>
+        <service id="19622" uri="ISI:000221786700004">
+          <name>An environment for knowledge discovery in biology</name>
+          <description>knowledge discovery; bioinformatics; microarrays; gene expression;   pattern recognition; databases; high-performance computing</description>
+        </service>
+        <service id="44008" uri="ISI:000169290800001">
+          <name>Sup-compact and inf-compact representations of W-operators</name>
+          <description>mathematical morphology; W-operators; compact representation; openings   and closings</description>
+        </service>
+        <service id="44448" uri="ISI:000169290800001">
+          <name>Sup-compact and inf-compact representations of W-operators</name>
+          <description>mathematical morphology; W-operators; compact representation; openings   and closings</description>
+        </service>
+        <service id="44838" uri="ISI:000169290800001">
+          <name>Sup-compact and inf-compact representations of W-operators</name>
+          <description>mathematical morphology; W-operators; compact representation; openings   and closings</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="Brandao, LO" type="paperContribution"/>
+        <connection strength="1" to="Suh, E" type="paperContribution"/>
+        <connection strength="1" to="Dougherty, ER" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Brandao, LO" name="Brandao, LO">
+      <name>Brandao, LO</name>
+      <location lat="29.65133" lng="-95.177643" name="null"/>
+      <connections>
+        <connection strength="1" to="Suh, E" type="paperContribution"/>
+        <connection strength="1" to="Dougherty, ER" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Suh, E" name="Suh, E">
+      <name>Suh, E</name>
+      <location lat="-23.5489433" lng="-46.6388182" name="null"/>
+      <connections>
+        <connection strength="1" to="Dougherty, ER" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Dougherty, ER" name="Dougherty, ER">
+      <name>Dougherty, ER</name>
+      <location lat="-23.5489433" lng="-46.6388182" name="null"/>
+      <servicePool type="onOffer">
+        <service id="33810" uri="ISI:000178181200002">
+          <name>Pattern recognition theory in nonlinear signal processing</name>
+          <description>mathematical morphology; optimal filters; neural networks; pattern   recognition</description>
+        </service>
+        <service id="38198" uri="ISI:000174426900006">
+          <name>Inference from clustering with application to gene-expression   microarrays</name>
+          <description>clustering; gene expression; microarray</description>
+        </service>
+        <service id="45945" uri="ISI:000167045400004">
+          <name>Multiresolution analysis for optimal binary filters</name>
+          <description>multiresolution analysis; nonlinear filter; optimal filter</description>
+        </service>
+      </servicePool>
+      <connections>
+      </connections>
+    </node>
+    <node type="USP,IF" uri="Oliveira, RF" name="Oliveira, RF">
+      <name>Oliveira, RF</name>
+      <location lat="-23.1347461" lng="-46.5637503" name="USP,IF"/>
+      <servicePool type="onOffer">
+        <service id="8541" uri="ISI:000229663600016">
+          <name>A possible mechanism of curvature coding in early vision</name>
+          <description>curvature detection; orientation selectivity; visual system; contextual   effects; short-range connections</description>
+        </service>
+        <service id="10774" uri="ISI:000227140200069">
+          <name>Optical measurement of miniband dispersion and bandgap renormalization   in modulation-doped AlGaAs/GaAs superlattices</name>
+          <description>semiconductor; superlattice</description>
+        </service>
+        <service id="13859" uri="ISI:000225382500002">
+          <name>Measurement of miniband parameters of a doped superlattice by   photoluminescence in high magnetic fields</name>
+          <description>null</description>
+        </service>
+        <service id="17090" uri="ISI:000223138500033">
+          <name>Luminescence from miniband states in heavily doped superlattices</name>
+          <description>null</description>
+        </service>
+        <service id="35145" uri="ISI:000176839200139">
+          <name>A biologically plausible neural network model of the primate primary   visual system</name>
+          <description>biologically plausible simulation; visual system; ocular dominance;   orientation selectivity</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="Costa, LD" type="paperContribution"/>
+        <connection strength="1" to="Roque, AC" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="USP,IFSC" uri="Costa, LD" name="Costa, LD">
+      <name>Costa, LD</name>
+      <location lat="39.512816" lng="-87.135511" name="USP,IFSC"/>
+      <servicePool type="onOffer">
+        <service id="1623" uri="ISI:000235008500086">
+          <name>Characterizing polygonality in biological structures</name>
+          <description>null</description>
+        </service>
+        <service id="2040" uri="ISI:000234757100084">
+          <name>Complex channel networks of bone structure</name>
+          <description>null</description>
+        </service>
+        <service id="3607" uri="ISI:000233456200004">
+          <name>An integrated approach to the characterization of cell movement</name>
+          <description>cell displacement; cell interaction; trajectory analysis</description>
+        </service>
+        <service id="3814" uri="ISI:000233384100014">
+          <name>Growth-driven percolations: the dynamics of connectivity in neuronal   systems</name>
+          <description>null</description>
+        </service>
+        <service id="5452" uri="ISI:000232025700015">
+          <name>Complex grid computing</name>
+          <description>null</description>
+        </service>
+        <service id="5597" uri="ISI:000231926600001">
+          <name>Sznajd complex networks</name>
+          <description>complex networks; Sznajd models; geographical networks; hierarchical   measurements</description>
+        </service>
+        <service id="5598" uri="ISI:000231926600008">
+          <name>Strength distribution in derivative networks</name>
+          <description>complex networks; fitness; weighted diagraphs; strength distribution;   node similarity</description>
+        </service>
+        <service id="7599" uri="ISI:000230502900012">
+          <name>Active percolation analysis of pyramidal neurons of somatosensory   cortex: A comparison of wild type and p21H-Ras(Val12) transgenic mice</name>
+          <description>neuronal shape; neuromorphometry; percolation; phase transition;   density analysis</description>
+        </service>
+        <service id="9681" uri="ISI:000228991600075">
+          <name>Statistical mechanics characterization of neuronal mosaics</name>
+          <description>null</description>
+        </service>
+        <service id="10099" uri="ISI:000228245700042">
+          <name>Topographical maps as complex networks</name>
+          <description>null</description>
+        </service>
+        <service id="10255" uri="ISI:000228242700076">
+          <name>Field approach to three-dimensional gene expression pattern   characterization</name>
+          <description>null</description>
+        </service>
+        <service id="11795" uri="ISI:000227241200007">
+          <name>Biological sequence analysis through the one-dimensional percolation   transform and its enhanced version</name>
+          <description>null</description>
+        </service>
+        <service id="12424" uri="ISI:000226629700023">
+          <name>On the potential of the excluded volume and autocorrelation as   neuromorphometric descriptors</name>
+          <description>morphotnetry; neural networks</description>
+        </service>
+        <service id="12495" uri="ISI:000226583400021">
+          <name>Editorial - Special section on Bioinformatics</name>
+          <description>null</description>
+        </service>
+        <service id="12700" uri="ISI:000226464000017">
+          <name>An analytical approach to neuronal connectivity</name>
+          <description>null</description>
+        </service>
+        <service id="13082" uri="ISI:000225970700018">
+          <name>L-percolations of complex networks</name>
+          <description>null</description>
+        </service>
+        <service id="16385" uri="ISI:000223488400044">
+          <name>A direct approach to neuronal connectivity</name>
+          <description>morphometry; neural networks</description>
+        </service>
+        <service id="16593" uri="ISI:000223555600078">
+          <name>The hierarchical backbone of complex networks</name>
+          <description>null</description>
+        </service>
+        <service id="17113" uri="ISI:000223142000001">
+          <name>Mathematical characterization of three-dimensional gene expression   patterns</name>
+          <description>null</description>
+        </service>
+        <service id="17496" uri="ISI:000222792900003">
+          <name>Whats in a name?</name>
+          <description>complex networks; associative memory; pscychophysics; scale-free   networks; graph theory; statistical mechanics.</description>
+        </service>
+        <service id="17781" uri="ISI:000222502800039">
+          <name>Reinforcing the resilience of complex networks</name>
+          <description>null</description>
+        </service>
+        <service id="22255" uri="ISI:000188536200011">
+          <name>Biological shape analysis by digital curvature</name>
+          <description>shape analysis; digital curvature; morphological and geographic   distributions; morphometric analysis; morphological landmark</description>
+        </service>
+        <service id="23264" uri="ISI:000187419800003">
+          <name>Enhanced multiscale skeletons</name>
+          <description>null</description>
+        </service>
+        <service id="23428" uri="ISI:000187183600079">
+          <name>Characterizing width uniformity by wave propagation</name>
+          <description>null</description>
+        </service>
+        <service id="23430" uri="ISI:000187225600008">
+          <name>Associative recall in non-randomly diluted neuronal networks</name>
+          <description>asymmetry; scale-free networks; geometric networks</description>
+        </service>
+        <service id="24895" uri="ISI:000186094800005">
+          <name>A percolation approach to neural morphometry and connectivity</name>
+          <description>null</description>
+        </service>
+        <service id="26188" uri="ISI:000185011700011">
+          <name>Statistical characterization of morphological features of   layer-by-layer polymer films by image analysis</name>
+          <description>atomic force microscopy; polymer films; image analysis; granulometry</description>
+        </service>
+        <service id="33782" uri="ISI:000178048700004">
+          <name>A shape analysis framework for neuromorphometry</name>
+          <description>null</description>
+        </service>
+        <service id="34119" uri="ISI:000177878600001">
+          <name>Special issue: Imaging in bioinformatics</name>
+          <description>null</description>
+        </service>
+        <service id="34266" uri="ISI:000177636300011">
+          <name>Estimating derivatives and curvature of open curves</name>
+          <description>curvature estimation; spectral methods; open parametric curves; Fourier   transform; variational methods; shape analysis</description>
+        </service>
+        <service id="34499" uri="ISI:000177527300001">
+          <name>Special issue on applied visual inspection</name>
+          <description>null</description>
+        </service>
+        <service id="34619" uri="ISI:000177878600001">
+          <name>Special issue: Imaging in bioinformatics</name>
+          <description>null</description>
+        </service>
+        <service id="34766" uri="ISI:000177636300011">
+          <name>Estimating derivatives and curvature of open curves</name>
+          <description>curvature estimation; spectral methods; open parametric curves; Fourier   transform; variational methods; shape analysis</description>
+        </service>
+        <service id="34999" uri="ISI:000177527300001">
+          <name>Special issue on applied visual inspection</name>
+          <description>null</description>
+        </service>
+        <service id="41624" uri="ISI:000171373700003">
+          <name>Optimized approach to multiscale skeleton generation</name>
+          <description>propagation; contours; shock; transforms</description>
+        </service>
+        <service id="46192" uri="ISI:000166852800041">
+          <name>A biologically-motivated approach to image representation and its   application to neuromorphology</name>
+          <description>null</description>
+        </service>
+        <service id="46600" uri="ISI:000166244800001">
+          <name>Robust skeletonization through exact Euclidean distance transform and   its application to neuromorphometry</name>
+          <description>null</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="Roque, AC" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Roque, AC" name="Roque, AC">
+      <name>Roque, AC</name>
+      <location lat="-23.131844" lng="-45.5067676" name="null"/>
+      <servicePool type="onOffer">
+        <service id="30798" uri="ISI:000180980600007">
+          <name>Mammography and computerized decision systems - A review</name>
+          <description>mammography; computer-aided diagnosis; breast cancer</description>
+        </service>
+      </servicePool>
+      <connections>
+      </connections>
+    </node>
+    <node type="USP,EP" uri="Cozman, FG" name="Cozman, FG">
+      <name>Cozman, FG</name>
+      <location lat="-23.6884037" lng="-46.6635289" name="USP,EP"/>
+      <servicePool type="onOffer">
+        <service id="1348" uri="ISI:000235267600005">
+          <name>Graphoid properties of epistemic irrelevance and independence</name>
+          <description>conditional independence; credal set; epistemic independence; graphoid   axioms; imprecise probability; lower prevision</description>
+        </service>
+        <service id="9641" uri="ISI:000228879400004">
+          <name>Graphical models for imprecise probabilities</name>
+          <description>imprecise probabilities; sets of probability distributions; graphical   models; credal networks</description>
+        </service>
+      </servicePool>
+      <connections>
+      </connections>
+    </node>
+    <node type="USP,EP" uri="da Rocha, JCF" name="da Rocha, JCF">
+      <name>da Rocha, JCF</name>
+      <location lat="-23.6884037" lng="-46.6635289" name="USP,EP"/>
+      <servicePool type="onOffer">
+        <service id="9642" uri="ISI:000228879400009">
+          <name>Inference in credal networks: branch-and-bound methods and the A/R plus   algorithm</name>
+          <description>null</description>
+        </service>
+        <service id="29126" uri="ISI:000182748800036">
+          <name>Evidence propagation in credal networks: An exact algorithm based on   separately specified sets of probability</name>
+          <description>null</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="Coman, FG" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="USP,EP" uri="Coman, FG" name="Coman, FG">
+      <name>Coman, FG</name>
+      <location lat="39.512816" lng="-87.135511" name="USP,EP"/>
+      <connections>
+      </connections>
+    </node>
+    <node type="null" uri="Lacerda, E" name="Lacerda, E">
+      <name>Lacerda, E</name>
+      <location lat="-7.9204266" lng="-34.8500287" name="null"/>
+      <servicePool type="onOffer">
+        <service id="10046" uri="ISI:000228530700001">
+          <name>Evolutionary radial basis functions for credit assessment</name>
+          <description>RBF networks; neural networks; genetic algorithms</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="Carvalho, ACPLF" type="paperContribution"/>
+        <connection strength="1" to="Braga, AP" type="paperContribution"/>
+        <connection strength="1" to="Ludermir, TB" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Carvalho, ACPLF" name="Carvalho, ACPLF">
+      <name>Carvalho, ACPLF</name>
+      <location lat="-23.5489433" lng="-46.6388182" name="null"/>
+      <connections>
+        <connection strength="1" to="Braga, AP" type="paperContribution"/>
+        <connection strength="1" to="Ludermir, TB" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Braga, AP" name="Braga, AP">
+      <name>Braga, AP</name>
+      <location lat="39.512816" lng="-87.135511" name="null"/>
+      <connections>
+        <connection strength="1" to="Ludermir, TB" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Ludermir, TB" name="Ludermir, TB">
+      <name>Ludermir, TB</name>
+      <location lat="-19.5935544" lng="-44.0405477" name="null"/>
+      <servicePool type="onOffer">
+        <service id="24748" uri="ISI:000186291900001">
+          <name>The VIIth Brazilian Symposium on Neural Networks (SBRN02)</name>
+          <description>null</description>
+        </service>
+      </servicePool>
+      <connections>
+      </connections>
+    </node>
+    <node type="null" uri="Jafelice, RM" name="Jafelice, RM">
+      <name>Jafelice, RM</name>
+      <location lat="-19.5935544" lng="-44.0405477" name="null"/>
+      <servicePool type="onOffer">
+        <service id="10170" uri="ISI:000228311900004">
+          <name>Methodology to determine the evolution of asymptomatic HIV population   using fuzzy set theory</name>
+          <description>epidemiological modeling; HIV population model; dynamic fuzzy modeling;   fuzzy set theory</description>
+        </service>
+        <service id="14181" uri="ISI:000225241700006">
+          <name>Fuzzy modeling in symptomatic HIV virus infected population</name>
+          <description>null</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="De Barros, LC" type="paperContribution"/>
+        <connection strength="1" to="Bassanezi, RC" type="paperContribution"/>
+        <connection strength="1" to="Gomide, F" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="De Barros, LC" name="De Barros, LC">
+      <name>De Barros, LC</name>
+      <location lat="39.512816" lng="-87.135511" name="null"/>
+      <servicePool type="onOffer">
+        <service id="28604" uri="ISI:000183601900012">
+          <name>The SI epidemiological models with a fuzzy transmission parameter</name>
+          <description>epidemiology; fuzzy set; fuzzy expected value; transmission   coefficient; basic reproduction value</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="Bassanezi, RC" type="paperContribution"/>
+        <connection strength="1" to="Gomide, F" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Bassanezi, RC" name="Bassanezi, RC">
+      <name>Bassanezi, RC</name>
+      <location lat="39.512816" lng="-87.135511" name="null"/>
+      <connections>
+        <connection strength="1" to="Gomide, F" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Gomide, F" name="Gomide, F">
+      <name>Gomide, F</name>
+      <location lat="-23.5489433" lng="-46.6388182" name="null"/>
+      <connections>
+      </connections>
+    </node>
+    <node type="null" uri="Ramos, FT" name="Ramos, FT">
+      <name>Ramos, FT</name>
+      <location lat="-23.131844" lng="-45.5067676" name="null"/>
+      <servicePool type="onOffer">
+        <service id="12671" uri="ISI:000226539300003">
+          <name>Anytime anyspace probabilistic inference</name>
+          <description>null</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="Cozman, FG" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Benferhat, S" name="Benferhat, S">
+      <name>Benferhat, S</name>
+      <location lat="47.3924816" lng="2.8402326" name="null"/>
+      <servicePool type="onOffer">
+        <service id="5171" uri="ISI:000232139400004">
+          <name>An overview of possibilistic handling of default reasoning, with   experimental studies</name>
+          <description>null</description>
+        </service>
+        <service id="16695" uri="ISI:000223496200001">
+          <name>Special issue on uncertain reasoning (Part 2)</name>
+          <description>null</description>
+        </service>
+        <service id="16696" uri="ISI:000223496200003">
+          <name>A stratified first order logic approach for access control</name>
+          <description>null</description>
+        </service>
+        <service id="17346" uri="ISI:000222955100001">
+          <name>Special issue on uncertain reasoning (part 1)</name>
+          <description>null</description>
+        </service>
+        <service id="17863" uri="ISI:000222555500001">
+          <name>Special Issue on Nonmonotonic Reasoning</name>
+          <description>null</description>
+        </service>
+        <service id="23369" uri="ISI:000187294700013">
+          <name>Enhanced correlation in an intrusion detection process</name>
+          <description>null</description>
+        </service>
+        <service id="24163" uri="ISI:000186521200002">
+          <name>A big-stepped probability approach for discovering default rules</name>
+          <description>knowledge discovery; default rules; non-monotonic reasoning; big   stepped-probabilities; possibility theory</description>
+        </service>
+        <service id="26395" uri="ISI:000184860500010">
+          <name>Logical representation and fusion of prioritized information based on   guaranteed possibility measures: Application to the distance-based   merging of classical bases</name>
+          <description>possibility theory; guaranteed possibility measure; fusion</description>
+        </service>
+        <service id="27455" uri="ISI:000184514800004">
+          <name>Fusion of possibilistic knowledge bases from a postulate point of view</name>
+          <description>possibilistic logic; fusion</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="Teng, CM" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Teng, CM" name="Teng, CM">
+      <name>Teng, CM</name>
+      <location lat="-23.5489433" lng="-46.6388182" name="null"/>
+      <connections>
+      </connections>
+    </node>
+    <node type="null" uri="El Baida, R" name="El Baida, R">
+      <name>El Baida, R</name>
+      <location lat="46.278556" lng="-0.4598081" name="null"/>
+      <connections>
+      </connections>
+    </node>
+    <node type="null" uri="Giunchiglia, E" name="Giunchiglia, E">
+      <name>Giunchiglia, E</name>
+      <location lat="46.278556" lng="-0.4598081" name="null"/>
+      <connections>
+      </connections>
+    </node>
+    <node type="null" uri="Darwiche, A" name="Darwiche, A">
+      <name>Darwiche, A</name>
+      <location lat="47.3924816" lng="2.8402326" name="null"/>
+      <servicePool type="onOffer">
+        <service id="17864" uri="ISI:000222555500004">
+          <name>Compiling propositional weighted bases</name>
+          <description>knowledge representation; belief bases; penalty logic; knowledge   compilation</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="Marquis, P" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Marquis, P" name="Marquis, P">
+      <name>Marquis, P</name>
+      <location lat="-23.5489433" lng="-46.6388182" name="null"/>
+      <servicePool type="onOffer">
+        <service id="25609" uri="ISI:000185647100001">
+          <name>Resource-bounded paraconsistent inference</name>
+          <description>resource-bounded reasoning; inconsistency handling</description>
+        </service>
+      </servicePool>
+      <connections>
+      </connections>
+    </node>
+    <node type="null" uri="Simoes-de-Souza, FM" name="Simoes-de-Souza, FM">
+      <name>Simoes-de-Souza, FM</name>
+      <location lat="-23.131844" lng="-45.5067676" name="null"/>
+      <servicePool type="onOffer">
+        <service id="18141" uri="ISI:000222245900149">
+          <name>Self-sustained waves in a computational model of the olfactory   epithelium with gap junctions</name>
+          <description>olfaction; olfactory epithelium; gap junctions; electrical synapses;   olfactory coding</description>
+        </service>
+        <service id="22354" uri="ISI:000188616400003">
+          <name>A biophysical model of vertebrate olfactory epithelium and bulb   exhibiting gap junction dependent odor-evoked spatiotemporal patterns   of activity</name>
+          <description>olfactory system; gap junctions; dendrodendritic synapses;   spatiotemporal coding; computational modeling</description>
+        </service>
+        <service id="35141" uri="ISI:000176839200028">
+          <name>Simulation of a vertebrate receptor cell of the olfactory epithelium   for use in network models</name>
+          <description>olfactory system; olfactory receptor cell; biochemical pathways;   olfactory epithelium</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="Roque, AC" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Faceli, K" name="Faceli, K">
+      <name>Faceli, K</name>
+      <location lat="-23.131844" lng="-45.5067676" name="null"/>
+      <servicePool type="onOffer">
+        <service id="5690" uri="ISI:000231193100008">
+          <name>Evaluation of the contents of partitions obtained with clustering gene   expression data</name>
+          <description>null</description>
+        </service>
+        <service id="12498" uri="ISI:000226583400029">
+          <name>Evaluation of gene selection metrics for tumor cell classification</name>
+          <description>gene selection; machine learning; gene expression; sage</description>
+        </service>
+        <service id="21064" uri="ISI:000220411400001">
+          <name>Combining intelligent techniques for sensor fusion</name>
+          <description>sensor fusion; combining estimators; machine learning; robotics</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="de Carvalho, ACPLF" type="paperContribution"/>
+        <connection strength="1" to="Rezende, SO" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="de Carvalho, ACPLF" name="de Carvalho, ACPLF">
+      <name>de Carvalho, ACPLF</name>
+      <location lat="39.512816" lng="-87.135511" name="null"/>
+      <connections>
+        <connection strength="1" to="Rezende, SO" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Rezende, SO" name="Rezende, SO">
+      <name>Rezende, SO</name>
+      <location lat="-23.131844" lng="-45.5067676" name="null"/>
+      <connections>
+      </connections>
+    </node>
+    <node type="null" uri="Braga, APS" name="Braga, APS">
+      <name>Braga, APS</name>
+      <location lat="-23.131844" lng="-45.5067676" name="null"/>
+      <servicePool type="onOffer">
+        <service id="23105" uri="ISI:000187658900013">
+          <name>A topological reinforcement learning agent for navigation</name>
+          <description>latent learning; navigation; neural networks; reinforcement learning;   topological maps</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="Araujo, AFR" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Araujo, AFR" name="Araujo, AFR">
+      <name>Araujo, AFR</name>
+      <location lat="-23.5489433" lng="-46.6388182" name="null"/>
+      <servicePool type="onOffer">
+        <service id="31765" uri="ISI:000180047800007">
+          <name>A stochastic neural model for fast identification of spatiotemporal   sequences</name>
+          <description>Gibbs distribution; identification; recurrent neural networks;   spatiotemporal sequence processing; vector quantization</description>
+        </service>
+        <service id="36499" uri="ISI:000176001400008">
+          <name>A self-organizing context-based approach to the tracking of multiple   robot trajectories</name>
+          <description>robotics; trajectory tracking; neural networks; unsupervised learning;   temporal context</description>
+        </service>
+        <service id="39752" uri="ISI:000173440100006">
+          <name>Context in temporal sequence processing: A self-organizing approach and   its application to robotics</name>
+          <description>context; Hebbian learning; robotics; self-organization; temporal   sequences; trajectory planning</description>
+        </service>
+      </servicePool>
+      <connections>
+      </connections>
+    </node>
+    <node type="null" uri="Dubois, D" name="Dubois, D">
+      <name>Dubois, D</name>
+      <location lat="46.278556" lng="-0.4598081" name="null"/>
+      <connections>
+        <connection strength="1" to="Lagrue, S" type="paperContribution"/>
+        <connection strength="1" to="Prade, H" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Lagrue, S" name="Lagrue, S">
+      <name>Lagrue, S</name>
+      <location lat="46.278556" lng="-0.4598081" name="null"/>
+      <servicePool type="onOffer">
+        <service id="15847" uri="ISI:000223762500015">
+          <name>Partially ordered preferences applied to the site location problem in   urban planning</name>
+          <description>null</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="Prade, H" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Prade, H" name="Prade, H">
+      <name>Prade, H</name>
+      <location lat="43.4802744" lng="5.4178486" name="null"/>
+      <connections>
+      </connections>
+    </node>
+    <node type="null" uri="de Souto, MCP" name="de Souto, MCP">
+      <name>de Souto, MCP</name>
+      <location lat="39.512816" lng="-87.135511" name="null"/>
+      <connections>
+      </connections>
+    </node>
+    <node type="USP,IQ" uri="Ballini, R" name="Ballini, R">
+      <name>Ballini, R</name>
+      <location lat="39.512816" lng="-87.135511" name="USP,IQ"/>
+      <servicePool type="onOffer">
+        <service id="24749" uri="ISI:000186291900002">
+          <name>Heuristic learning in recurrent neural fuzzy networks</name>
+          <description>null</description>
+        </service>
+        <service id="25526" uri="ISI:000185510700070">
+          <name>Gradient projection method and equality index in recurrent neural fuzzy   network</name>
+          <description>null</description>
+        </service>
+        <service id="30945" uri="ISI:000180859700025">
+          <name>One-pot synthesis of Gamma-diketones, Gamma-keto esters, and conjugated   cyclopentenones from nitroalkanes (Dec, pg 2725, 2002)</name>
+          <description>null</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="Gomide, F" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="de Oliveira, WR" name="de Oliveira, WR">
+      <name>de Oliveira, WR</name>
+      <location lat="39.512816" lng="-87.135511" name="null"/>
+      <servicePool type="onOffer">
+        <service id="24750" uri="ISI:000186291900004">
+          <name>Turings analysis of computation and artificial neural networks</name>
+          <description>Turing machine; recurrent sigmoid neural networks; mealy automata;   definite automata</description>
+        </service>
+        <service id="31190" uri="ISI:000180755200007">
+          <name>Seborrheic keratosis-like lesions in patients with epidermodysplasia   verruciformis</name>
+          <description>epidermodysplasia verruciformis; human papillomavirus; seborrheic   keratosis; skin carcinogenesis</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="de Souto, MCP" type="paperContribution"/>
+        <connection strength="1" to="Ludermir, TB" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="MACKENZIE" uri="Oliveira, GMB" name="Oliveira, GMB">
+      <name>Oliveira, GMB</name>
+      <location lat="-23.131844" lng="-45.5067676" name="MACKENZIE"/>
+      <servicePool type="onOffer">
+        <service id="14155" uri="ISI:000225208000003">
+          <name>Cellular automata cryptographic model based on bi-directional toggle   rules</name>
+          <description>cellular automata; cryptography; toggle rules</description>
+        </service>
+        <service id="24751" uri="ISI:000186291900005">
+          <name>Coevolutionary search for one-dimensional cellular automata, based on   parameters related to their dynamic behaviour</name>
+          <description>null</description>
+        </service>
+        <service id="40973" uri="ISI:000172208000003">
+          <name>Definition and application of a five-parameter characterization of   one-dimensional cellular automata rule space</name>
+          <description>cellular automata; elementary rule space; dynamic behavior; static   parameters; density classification task; synchronization task</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="Asakura, OKN" type="paperContribution"/>
+        <connection strength="1" to="de Oliveira, PPB" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Asakura, OKN" name="Asakura, OKN">
+      <name>Asakura, OKN</name>
+      <location lat="39.512816" lng="-87.135511" name="null"/>
+      <connections>
+        <connection strength="1" to="de Oliveira, PPB" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="MACKENZIE" uri="de Oliveira, PPB" name="de Oliveira, PPB">
+      <name>de Oliveira, PPB</name>
+      <location lat="39.512816" lng="-87.135511" name="MACKENZIE"/>
+      <servicePool type="onOffer">
+        <service id="28567" uri="ISI:000183569000004">
+          <name>Diagnosis of human coronary conditions by a neural network, with   evolutionary wavelength selection in their quantised Raman spectra</name>
+          <description>evolutionary computation; neural network; Raman spectra; coronary;   atheroma; automatic diagnosis</description>
+        </service>
+      </servicePool>
+      <connections>
+      </connections>
+    </node>
+    <node type="null" uri="de Lacerda, EGM" name="de Lacerda, EGM">
+      <name>de Lacerda, EGM</name>
+      <location lat="39.512816" lng="-87.135511" name="null"/>
+      <servicePool type="onOffer">
+        <service id="24752" uri="ISI:000186291900006">
+          <name>Model selection via Genetic Algorithms for RBF networks</name>
+          <description>Genetic Algorithms; model selection; crossvalidation; holdout;   bootstrap; RBF networks</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="de Carvalho, ACPLF" type="paperContribution"/>
+        <connection strength="1" to="Ludermir, TB" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="de Carvalho, ACPLF" name="de Carvalho, ACPLF">
+      <name>de Carvalho, ACPLF</name>
+      <location lat="39.512816" lng="-87.135511" name="null"/>
+      <connections>
+        <connection strength="1" to="Ludermir, TB" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Friske, LM" name="Friske, LM">
+      <name>Friske, LM</name>
+      <location lat="-23.131844" lng="-45.5067676" name="null"/>
+      <servicePool type="onOffer">
+        <service id="24753" uri="ISI:000186291900007">
+          <name>Experiments on the use of option policies in reinforcement learning</name>
+          <description>null</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="Ribeiro, CHC" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Ribeiro, CHC" name="Ribeiro, CHC">
+      <name>Ribeiro, CHC</name>
+      <location lat="-23.5142133" lng="-46.5773876" name="null"/>
+      <connections>
+      </connections>
+    </node>
+    <node type="null" uri="Costa, IG" name="Costa, IG">
+      <name>Costa, IG</name>
+      <location lat="-8.0575834" lng="-34.9531047" name="null"/>
+      <servicePool type="onOffer">
+        <service id="24754" uri="ISI:000186291900008">
+          <name>Comparative study on proximity indices for cluster analysis of gene   expression time series</name>
+          <description>bioinformatics; gene expression; cluster analysis; cluster validation;   cross validation</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="de Carvalho, FAT" type="paperContribution"/>
+        <connection strength="1" to="de Souto, MCP" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="de Carvalho, FAT" name="de Carvalho, FAT">
+      <name>de Carvalho, FAT</name>
+      <location lat="39.512816" lng="-87.135511" name="null"/>
+      <connections>
+        <connection strength="1" to="de Souto, MCP" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Gomes, LDT" name="Gomes, LDT">
+      <name>Gomes, LDT</name>
+      <location lat="-23.131844" lng="-45.5067676" name="null"/>
+      <servicePool type="onOffer">
+        <service id="24755" uri="ISI:000186291900009">
+          <name>Multiple criteria optimization based on unsupervised learning and fuzzy   inference applied to the vehicle routing problem</name>
+          <description>null</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="Von Zuben, FJ" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Von Zuben, FJ" name="Von Zuben, FJ">
+      <name>Von Zuben, FJ</name>
+      <location lat="-23.5489433" lng="-46.6388182" name="null"/>
+      <connections>
+      </connections>
+    </node>
+    <node type="null" uri="Macedo, RA" name="Macedo, RA">
+      <name>Macedo, RA</name>
+      <location lat="-23.131844" lng="-45.5067676" name="null"/>
+      <servicePool type="onOffer">
+        <service id="24756" uri="ISI:000186291900011">
+          <name>A genetic algorithm based approach to track voltage and current   harmonics in electrical power systems</name>
+          <description>null</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="da Silva, D" type="paperContribution"/>
+        <connection strength="1" to="Coury, DV" type="paperContribution"/>
+        <connection strength="1" to="Carneiro, AAFM" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="da Silva, D" name="da Silva, D">
+      <name>da Silva, D</name>
+      <location lat="39.512816" lng="-87.135511" name="null"/>
+      <connections>
+        <connection strength="1" to="Coury, DV" type="paperContribution"/>
+        <connection strength="1" to="Carneiro, AAFM" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="USP,EP" uri="Coury, DV" name="Coury, DV">
+      <name>Coury, DV</name>
+      <location lat="-23.131844" lng="-45.5067676" name="USP,EP"/>
+      <servicePool type="onOffer">
+        <service id="1281" uri="ISI:000235146900005">
+          <name>An alternative approach using artificial neural networks for power   transformer protection</name>
+          <description>artificial neural networks; power transformers; saturation;   differential protection</description>
+        </service>
+        <service id="30064" uri="ISI:000181903400002">
+          <name>Transient analysis concerning capacitor bank switching in a   distribution system</name>
+          <description>transients; capacitor switching; ATP</description>
+        </service>
+        <service id="33194" uri="ISI:000178740900003">
+          <name>An ANN routine for fault detection, classification, and location in   transmission lines</name>
+          <description>system protection; fault detection; fault classification; fault   location; artificial neural networks, and pattern recognition</description>
+        </service>
+        <service id="40119" uri="ISI:000172985000007">
+          <name>An agent-based current differential relay for use with a utility   intranet</name>
+          <description>agent technology; differential protection; relaying; transmission lines</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="Carneiro, AAFM" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Carneiro, AAFM" name="Carneiro, AAFM">
+      <name>Carneiro, AAFM</name>
+      <location lat="-23.5489433" lng="-46.6388182" name="null"/>
+      <connections>
+      </connections>
+    </node>
+    <node type="null" uri="Kaci, S" name="Kaci, S">
+      <name>Kaci, S</name>
+      <location lat="46.278556" lng="-0.4598081" name="null"/>
+      <servicePool type="onOffer">
+        <service id="6100" uri="ISI:000230770500025">
+          <name>Algorithms for a nonmonotonic logic of preferences</name>
+          <description>logic of preferences; preference logic</description>
+        </service>
+      </servicePool>
+      <connections>
+      </connections>
+    </node>
+    <node type="USP,EP" uri="Del-Moral-Hernandez, E" name="Del-Moral-Hernandez, E">
+      <name>Del-Moral-Hernandez, E</name>
+      <location lat="-23.558569" lng="-46.730112" name="USP,EP"/>
+      <servicePool type="onOffer">
+        <service id="27937" uri="ISI:000184011900021">
+          <name>Neural networks with chaotic recursive nodes: techniques for the design   of associative memories, contrast with Hopfield architectures, and   extensions for time-dependent inputs</name>
+          <description>temporal coding techniques and computation with spatio-temporal   patterns; artificial neural networks; coding and storage in associative   memories; globally coupled maps; recursive processing elements;   non-linear dynamics; chaotic neural networks</description>
+        </service>
+      </servicePool>
+      <connections>
+      </connections>
+    </node>
+    <node type="null" uri="Antunes, G" name="Antunes, G">
+      <name>Antunes, G</name>
+      <location lat="-23.5489433" lng="-46.6388182" name="null"/>
+      <servicePool type="onOffer">
+        <service id="28481" uri="ISI:000183514300051">
+          <name>Sensitivity of AMPA receptor channel to calcium oscillations: a   computational study</name>
+          <description>AMPA receptor; biochemical networks; plasticity; calcium oscillations</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="Simoes-de-Souza, FM" type="paperContribution"/>
+        <connection strength="1" to="Roque, AC" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Barreto, GD" name="Barreto, GD">
+      <name>Barreto, GD</name>
+      <location lat="39.512816" lng="-87.135511" name="null"/>
+      <servicePool type="onOffer">
+        <service id="29250" uri="ISI:000182607500004">
+          <name>Self-organizing feature maps for modeling and control of robotic   manipulators</name>
+          <description>compliant motion; hand-eye coordination; kinematics and dynamics;   obstacle avoidance; path planning; redundancy; robotics;   self-organizing feature maps</description>
+        </service>
+        <service id="29336" uri="ISI:000182530600002">
+          <name>A taxonomy for spatiotemporal connectionist networks revisited: The   unsupervised case</name>
+          <description>null</description>
+        </service>
+        <service id="30488" uri="ISI:000181441900158">
+          <name>Nonlinear modeling of dynamic systems with the self-organizing map</name>
+          <description>null</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="Araujo, AFR" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Baranauskas, JA" name="Baranauskas, JA">
+      <name>Baranauskas, JA</name>
+      <location lat="-21.1366473" lng="-47.7892586" name="null"/>
+      <servicePool type="onOffer">
+        <service id="30546" uri="ISI:000181221200001">
+          <name>Combining symbolic classifiers from multiple inducers</name>
+          <description>combining classifiers; machine leaming; data mining</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="Monard, MC" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Monard, MC" name="Monard, MC">
+      <name>Monard, MC</name>
+      <location lat="-23.131844" lng="-45.5067676" name="null"/>
+      <servicePool type="onOffer">
+        <service id="42869" uri="ISI:000170361900001">
+          <name>Pressure dependence of ionic polarizabilities in crystals</name>
+          <description>dielectric properties; polarizabilities; high pressure; ionic crystals</description>
+        </service>
+        <service id="43078" uri="ISI:000170361900001">
+          <name>Pressure dependence of ionic polarizabilities in crystals</name>
+          <description>dielectric properties; polarizabilities; high pressure; ionic crystals</description>
+        </service>
+      </servicePool>
+      <connections>
+      </connections>
+    </node>
+    <node type="null" uri="de Castro, LN" name="de Castro, LN">
+      <name>de Castro, LN</name>
+      <location lat="54.057112" lng="-2.869705" name="null"/>
+      <servicePool type="onOffer">
+        <service id="31286" uri="ISI:000180567700005">
+          <name>The construction of a Boolean competitive neural network using ideas   from immunology</name>
+          <description>immune system; clonal selection; competitive neural networks; pattern   recognition</description>
+        </service>
+        <service id="36157" uri="ISI:000176340500003">
+          <name>Learning and optimization using the clonal selection principle</name>
+          <description>clonal selection principle; evolutionary algorithms; optimization;   pattern recognition</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="Von Zuben, FJ" type="paperContribution"/>
+        <connection strength="1" to="de Deus, GA" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="de Deus, GA" name="de Deus, GA">
+      <name>de Deus, GA</name>
+      <location lat="39.512816" lng="-87.135511" name="null"/>
+      <connections>
+      </connections>
+    </node>
+    <node type="USP,IME" uri="Brun, M" name="Brun, M">
+      <name>Brun, M</name>
+      <location lat="39.512816" lng="-87.135511" name="USP,IME"/>
+      <servicePool type="onOffer">
+        <service id="31607" uri="ISI:000180351500002">
+          <name>Design of optimal binary filters under joint multiresolution-envelope   constraint</name>
+          <description>non linear filtering; multiresolution analysis; optimal binary filters</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="Dougherty, ER" type="paperContribution"/>
+        <connection strength="1" to="Hirata, R" type="paperContribution"/>
+        <connection strength="1" to="Barrera, J" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="USP,IGC" uri="Hirata, R" name="Hirata, R">
+      <name>Hirata, R</name>
+      <location lat="-23.5489433" lng="-46.6388182" name="USP,IGC"/>
+      <servicePool type="onOffer">
+        <service id="32036" uri="ISI:000179837600004">
+          <name>Segmentation of microarray images by mathematical morphology</name>
+          <description>null</description>
+        </service>
+        <service id="33811" uri="ISI:000178181200003">
+          <name>Multiresolution design of aperture operators</name>
+          <description>multiresolution; nonlinear filter; optimal filter</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="Barrera, J" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Guimaraes, SJF" name="Guimaraes, SJF">
+      <name>Guimaraes, SJF</name>
+      <location lat="48.84701" lng="2.5677618" name="null"/>
+      <servicePool type="onOffer">
+        <service id="13624" uri="ISI:000225676000018">
+          <name>Flat zone analysis and a sharpening operation for gradual transition   detection on video images</name>
+          <description>flat zone analysis; video transition identification; visual rhythm</description>
+        </service>
+        <service id="31608" uri="ISI:000180351500003">
+          <name>Video segmentation based on 2D image analysis</name>
+          <description>video segmentation; visual rhythm; mathematical morphology; image   segmentation</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="Couprie, M" type="paperContribution"/>
+        <connection strength="1" to="Araujo, AD" type="paperContribution"/>
+        <connection strength="1" to="Leite, NJ" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Couprie, M" name="Couprie, M">
+      <name>Couprie, M</name>
+      <location lat="39.512816" lng="-87.135511" name="null"/>
+      <connections>
+        <connection strength="1" to="Araujo, AD" type="paperContribution"/>
+        <connection strength="1" to="Leite, NJ" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Araujo, AD" name="Araujo, AD">
+      <name>Araujo, AD</name>
+      <location lat="39.512816" lng="-87.135511" name="null"/>
+      <connections>
+        <connection strength="1" to="Leite, NJ" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Leite, NJ" name="Leite, NJ">
+      <name>Leite, NJ</name>
+      <location lat="-23.131844" lng="-45.5067676" name="null"/>
+      <connections>
+      </connections>
+    </node>
+    <node type="null" uri="Bianchi, AGC" name="Bianchi, AGC">
+      <name>Bianchi, AGC</name>
+      <location lat="39.512816" lng="-87.135511" name="null"/>
+      <servicePool type="onOffer">
+        <service id="31609" uri="ISI:000180351500009">
+          <name>Inferring shape evolution</name>
+          <description>shape dynamics; correspondence; normal evolution</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="dos Santos, MF" type="paperContribution"/>
+        <connection strength="1" to="Britto, DEH" type="paperContribution"/>
+        <connection strength="1" to="Costa, LD" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="dos Santos, MF" name="dos Santos, MF">
+      <name>dos Santos, MF</name>
+      <location lat="-23.5142133" lng="-46.5773876" name="null"/>
+      <connections>
+        <connection strength="1" to="Britto, DEH" type="paperContribution"/>
+        <connection strength="1" to="Costa, LD" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Britto, DEH" name="Britto, DEH">
+      <name>Britto, DEH</name>
+      <location lat="39.512816" lng="-87.135511" name="null"/>
+      <connections>
+        <connection strength="1" to="Costa, LD" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Coelho, RC" name="Coelho, RC">
+      <name>Coelho, RC</name>
+      <location lat="39.512816" lng="-87.135511" name="null"/>
+      <servicePool type="onOffer">
+        <service id="22563" uri="ISI:000188097600083">
+          <name>Generating three-dimensional neural cells based on Bayes rules and   interpolation with thin plate splines</name>
+          <description>null</description>
+        </service>
+        <service id="33441" uri="ISI:000178464600034">
+          <name>Realistic neuromorphic models and their application to neural   reorganization simulations</name>
+          <description>neuromorphology; neural simulation modeling; neural reorganization</description>
+        </service>
+        <service id="34120" uri="ISI:000177878600005">
+          <name>Shape-based features for cat ganglion retinal cells classification</name>
+          <description>null</description>
+        </service>
+        <service id="34620" uri="ISI:000177878600005">
+          <name>Shape-based features for cat ganglion retinal cells classification</name>
+          <description>null</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="Costa, LD" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="De Pinho, M" name="De Pinho, M">
+      <name>De Pinho, M</name>
+      <location lat="39.512816" lng="-87.135511" name="null"/>
+      <servicePool type="onOffer">
+        <service id="35142" uri="ISI:000176839200054">
+          <name>Shannons entropy applied to the analysis of tonotopic reorganization   in a computational model of classical conditioning</name>
+          <description>informational entropy; classical conditioning; auditory system;   realistic simulation; synaptic receptors</description>
+        </service>
+        <service id="43957" uri="ISI:000169129200155">
+          <name>A realistic model of tonotopic reorganization in the auditory cortex in   response to cochlear lesions</name>
+          <description>realistic simulation; cortical maps; auditory system; cochlear lesions;   neuronal plasticity</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="Mazza, M" type="paperContribution"/>
+        <connection strength="1" to="Piqueira, JRC" type="paperContribution"/>
+        <connection strength="1" to="Roque, AC" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="USP,FFCLRP" uri="Mazza, M" name="Mazza, M">
+      <name>Mazza, M</name>
+      <location lat="-24.108726" lng="-46.6496483" name="USP,FFCLRP"/>
+      <servicePool type="onOffer">
+        <service id="22307" uri="ISI:000188667200006">
+          <name>A dynamical model of fast cortical reorganization</name>
+          <description>cortical reorganization; dynamic plasticity; somatosensory system;   information theory</description>
+        </service>
+        <service id="35143" uri="ISI:000176839200133">
+          <name>Tsallis information measure applied to the analysis of EEG signals in a   model of the somatosensory system</name>
+          <description>informational entropy; EEG; somatosensory; realistic simulation</description>
+        </service>
+        <service id="35144" uri="ISI:000176839200134">
+          <name>Using information theory for the analysis of cortical reorganization in   a realistic computational model of the somatosensory system</name>
+          <description>informational entropy; neuronal plasticity; somatosensory; synaptic   receptors; realistic simulation</description>
+        </service>
+        <service id="43958" uri="ISI:000169129200190">
+          <name>Alterations of maps induced by blockage of synaptic receptors in a   computer simulation of the somatosensory system</name>
+          <description>realistic simulation; neuronal plasticity somatosensory cortex;   synaptic receptors</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="Piqueira, JRC" type="paperContribution"/>
+        <connection strength="1" to="Roque, AC" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="USP,EP" uri="Piqueira, JRC" name="Piqueira, JRC">
+      <name>Piqueira, JRC</name>
+      <location lat="-24.1140452" lng="-46.6596103" name="USP,EP"/>
+      <servicePool type="onOffer">
+        <service id="5624" uri="ISI:000231919200021">
+          <name>Two-way master-slave double-chain networks: Limitations imposed by   linear master drift for second order PLLs as slave nodes</name>
+          <description>free-running frequency; frequency-error; master-slave; phase-error;   phase-locked loops; synchronous state; topology</description>
+        </service>
+        <service id="8280" uri="ISI:000229916200010">
+          <name>Analyzing the effect of the phase-jitter in the operation of second   order phase-locked loops</name>
+          <description>asymptotic approximation; phase jitter; phase-locked loops(PLLs);   synchronization; synchronous state</description>
+        </service>
+        <service id="13173" uri="ISI:000226175300004">
+          <name>Modeling the spreading of HIV in homosexual populations with   heterogeneous preventive attitude</name>
+          <description>dynamical systems; epidemiology; HIV; mathematical models; population   biology; small-world networks</description>
+        </service>
+        <service id="15192" uri="ISI:000224287700001">
+          <name>Using central manifold theorem in the analysis of master-slave   synchronization networks</name>
+          <description>bifurcation; master-slave; network; phase-locked loops; single-star;   synchronization; synchronous state</description>
+        </service>
+        <service id="18997" uri="ISI:000221647300035">
+          <name>Bits and q-bits as versatility measures</name>
+          <description>bit; complexity; entropy; q-bit; measure; versatility</description>
+        </service>
+        <service id="19447" uri="ISI:000221647300035">
+          <name>Bits and q-bits as versatility measures</name>
+          <description>bit; complexity; entropy; q-bit; measure; versatility</description>
+        </service>
+        <service id="19827" uri="ISI:000221647300035">
+          <name>Bits and q-bits as versatility measures</name>
+          <description>bit; complexity; entropy; q-bit; measure; versatility</description>
+        </service>
+        <service id="28186" uri="ISI:000183877700013">
+          <name>Considering second-harmonic terms in the operation of the phase   detector for second-order phase-locked loop</name>
+          <description>capture range; double frequency terms; nonlinear analysis; phase-locked   loop (PLL); stability analysis; trajectory tracking</description>
+        </service>
+        <service id="31041" uri="ISI:000180862400024">
+          <name>Computing with phase locked loops: Choosing gains and delays</name>
+          <description>acquisition time; free-running frequencies; phase-locked loops (PLLs);   synchronism; synchronous state</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="Roque, AC" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Tedeschi, W" name="Tedeschi, W">
+      <name>Tedeschi, W</name>
+      <location lat="-23.5489433" lng="-46.6388182" name="null"/>
+      <servicePool type="onOffer">
+        <service id="8760" uri="ISI:000229516100028">
+          <name>Generalized mutual information tests applied to fMRI analysis</name>
+          <description>generalized mutual information; fMRI-analysis; functional imaging of   the human brain; Tsallis entropy</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="De Pinho, M" type="paperContribution"/>
+        <connection strength="1" to="Neves, UPC" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Neves, UPC" name="Neves, UPC">
+      <name>Neves, UPC</name>
+      <location lat="-23.5489433" lng="-46.6388182" name="null"/>
+      <servicePool type="onOffer">
+        <service id="28473" uri="ISI:000183470900001">
+          <name>The branched polymer growth model revisited</name>
+          <description>branched polymer; critical transition; reentrant phase</description>
+        </service>
+      </servicePool>
+      <connections>
+      </connections>
+    </node>
+    <node type="USP,IME" uri="da Silva, FSC" name="da Silva, FSC">
+      <name>da Silva, FSC</name>
+      <location lat="39.512816" lng="-87.135511" name="USP,IME"/>
+      <servicePool type="onOffer">
+        <service id="3641" uri="ISI:000233291300023">
+          <name>Agent-based management of responsive environments</name>
+          <description>null</description>
+        </service>
+        <service id="6830" uri="ISI:000231021100006">
+          <name>Towards a logic of perishable propositions</name>
+          <description>probabilistic propositional logic; applied artificial intelligence in   engineering</description>
+        </service>
+        <service id="39077" uri="ISI:000174101700001">
+          <name>On the insufficiency of ontologies: problems in knowledge sharing and   alternative solutions</name>
+          <description>ontologies; knowledge sharing; knowledge representation and inference</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="Vasconcelos, WW" type="paperContribution"/>
+        <connection strength="1" to="Robertson, DS" type="paperContribution"/>
+        <connection strength="1" to="Brilhante, V" type="paperContribution"/>
+        <connection strength="1" to="de Melo, ACV" type="paperContribution"/>
+        <connection strength="1" to="Finger, M" type="paperContribution"/>
+        <connection strength="1" to="Agusti, J" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Vasconcelos, WW" name="Vasconcelos, WW">
+      <name>Vasconcelos, WW</name>
+      <location lat="-23.5489433" lng="-46.6388182" name="null"/>
+      <connections>
+        <connection strength="1" to="Robertson, DS" type="paperContribution"/>
+        <connection strength="1" to="Brilhante, V" type="paperContribution"/>
+        <connection strength="1" to="de Melo, ACV" type="paperContribution"/>
+        <connection strength="1" to="Finger, M" type="paperContribution"/>
+        <connection strength="1" to="Agusti, J" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Robertson, DS" name="Robertson, DS">
+      <name>Robertson, DS</name>
+      <location lat="-23.5142133" lng="-46.5773876" name="null"/>
+      <servicePool type="onOffer">
+        <service id="42668" uri="ISI:000170571100080">
+          <name>A lightweight capability communication mechanism</name>
+          <description>null</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="Brilhante, V" type="paperContribution"/>
+        <connection strength="1" to="de Melo, ACV" type="paperContribution"/>
+        <connection strength="1" to="Finger, M" type="paperContribution"/>
+        <connection strength="1" to="Agusti, J" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Brilhante, V" name="Brilhante, V">
+      <name>Brilhante, V</name>
+      <location lat="41.9730343" lng="3.2081756" name="null"/>
+      <connections>
+        <connection strength="1" to="de Melo, ACV" type="paperContribution"/>
+        <connection strength="1" to="Finger, M" type="paperContribution"/>
+        <connection strength="1" to="Agusti, J" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="USP,IME" uri="de Melo, ACV" name="de Melo, ACV">
+      <name>de Melo, ACV</name>
+      <location lat="39.512816" lng="-87.135511" name="USP,IME"/>
+      <servicePool type="onOffer">
+        <service id="9710" uri="ISI:000228554400047">
+          <name>Bayesian networks in software maintenance management</name>
+          <description>null</description>
+        </service>
+        <service id="21758" uri="ISI:000189229500005">
+          <name>On the composition of Java frameworks control-flows</name>
+          <description>object oriented software; frameworks; control-flows composition;   software reuse</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="Finger, M" type="paperContribution"/>
+        <connection strength="1" to="Agusti, J" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="USP,IME" uri="Finger, M" name="Finger, M">
+      <name>Finger, M</name>
+      <location lat="-24.108726" lng="-46.6496483" name="USP,IME"/>
+      <servicePool type="onOffer">
+        <service id="14261" uri="ISI:000224602200043">
+          <name>Polynomial approximations of full propositional logic via limited   bivalence</name>
+          <description>approximated reasoning; polynomial approximations</description>
+        </service>
+        <service id="15093" uri="ISI:000224323800002">
+          <name>Towards polynomial approximations of full propositional logic</name>
+          <description>null</description>
+        </service>
+        <service id="29118" uri="ISI:000182748800003">
+          <name>Logics for approximate reasoning: Approximating classical logic "from   above"</name>
+          <description>null</description>
+        </service>
+        <service id="29345" uri="ISI:000182450300003">
+          <name>The unrestricted combination of temporal logic systems</name>
+          <description>temporal logics; combinations of logical systems; completeness of   combination of logical systems; decidability of combination of logical   systems</description>
+        </service>
+        <service id="37626" uri="ISI:000174952800021">
+          <name>Sharing resource-sensitive knowledge using combinator logics</name>
+          <description>knowledge sharing; resource-sensitive logics</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="Agusti, J" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Agusti, J" name="Agusti, J">
+      <name>Agusti, J</name>
+      <location lat="-23.5489433" lng="-46.6388182" name="null"/>
+      <connections>
+      </connections>
+    </node>
+    <node type="null" uri="Salles, J" name="Salles, J">
+      <name>Salles, J</name>
+      <location lat="-19.5935544" lng="-44.0405477" name="null"/>
+      <servicePool type="onOffer">
+        <service id="40428" uri="ISI:000172712300008">
+          <name>Towards a communication model applied to the interface design process</name>
+          <description>communication; semiotics; design process</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="Baranauskas, MCC" type="paperContribution"/>
+        <connection strength="1" to="Bigonha, RS" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Baranauskas, MCC" name="Baranauskas, MCC">
+      <name>Baranauskas, MCC</name>
+      <location lat="39.512816" lng="-87.135511" name="null"/>
+      <connections>
+        <connection strength="1" to="Bigonha, RS" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Bigonha, RS" name="Bigonha, RS">
+      <name>Bigonha, RS</name>
+      <location lat="39.512816" lng="-87.135511" name="null"/>
+      <connections>
+      </connections>
+    </node>
+    <node type="null" uri="Pereira, A" name="Pereira, A">
+      <name>Pereira, A</name>
+      <location lat="-23.131844" lng="-45.5067676" name="null"/>
+      <servicePool type="onOffer">
+        <service id="6621" uri="ISI:000230947600009">
+          <name>Comparative analysis of a Bordetella pertussis patient isolated strain   and classical strains used in the pertussis vaccine</name>
+          <description>Bordetella pertussis; whole-cell pertussis vaccine; strains</description>
+        </service>
+        <service id="11332" uri="ISI:000224056500052">
+          <name>Endothelial nitric oxide synthase gene variant modulates the   relationship between serum cholesterol levels and blood pressure in the   general population: new evidence for a direct effect of lipids in blood   pressure</name>
+          <description>null</description>
+        </service>
+        <service id="42101" uri="ISI:000170978700002">
+          <name>Coexisting spatio-temporal scales in neuroscience</name>
+          <description>null</description>
+        </service>
+      </servicePool>
+      <connections>
+      </connections>
+    </node>
+    <node type="null" uri="Kuva, SM" name="Kuva, SM">
+      <name>Kuva, SM</name>
+      <location lat="-23.131844" lng="-45.5067676" name="null"/>
+      <servicePool type="onOffer">
+        <service id="43956" uri="ISI:000169129200035">
+          <name>A minimal model for excitable and bursting elements</name>
+          <description>excitable cells; bursting cells; neuron models; FitzHugh-Nagumo;   Rose-Hindmarsh; coupled maps lattices</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="Lima, GF" type="paperContribution"/>
+        <connection strength="1" to="Kinouchi, O" type="paperContribution"/>
+        <connection strength="1" to="Tragtenberg, MHR" type="paperContribution"/>
+        <connection strength="1" to="Roque, AC" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="USP,IF" uri="Lima, GF" name="Lima, GF">
+      <name>Lima, GF</name>
+      <location lat="-23.5142133" lng="-46.5773876" name="USP,IF"/>
+      <servicePool type="onOffer">
+        <service id="37421" uri="ISI:000175186200070">
+          <name>Direct mass measurements of proton-rich isotopes of Ge, As, Se, and Br</name>
+          <description>null</description>
+        </service>
+        <service id="43548" uri="ISI:000169822900007">
+          <name>Deterministic walks in random media</name>
+          <description>null</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="Kinouchi, O" type="paperContribution"/>
+        <connection strength="1" to="Tragtenberg, MHR" type="paperContribution"/>
+        <connection strength="1" to="Roque, AC" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Kinouchi, O" name="Kinouchi, O">
+      <name>Kinouchi, O</name>
+      <location lat="-7.9204266" lng="-34.8500287" name="null"/>
+      <servicePool type="onOffer">
+        <service id="32257" uri="ISI:000179568800016">
+          <name>Deterministic walks in random networks: an application to thesaurus   graphs</name>
+          <description>null</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="Tragtenberg, MHR" type="paperContribution"/>
+        <connection strength="1" to="Roque, AC" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Tragtenberg, MHR" name="Tragtenberg, MHR">
+      <name>Tragtenberg, MHR</name>
+      <location lat="-23.5489433" lng="-46.6388182" name="null"/>
+      <connections>
+        <connection strength="1" to="Roque, AC" type="paperContribution"/>
+      </connections>
+    </node>
+  </nodes>
+  <timestamp>1001</timestamp>
+</NetworkDescription>

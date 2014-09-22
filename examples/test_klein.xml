@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NetworkDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="http://www.fh-salzburg.ac.at/NetDesc">
+   <nodes>
+    <node type="null" uri="de Aguiar, MAM" name="de Aguiar, MAM">
+      <name>de Aguiar, MAM</name>
+      <location lat="42.441145" lng="-71.072847" name="null"/>
+      <servicePool type="onOffer">
+        <service id="1428" uri="ISI:000235065000104">
+          <name>Analytically solvable model of probabilistic network dynamics</name>
+          <description>null</description>
+        </service>
+        <service id="7222" uri="ISI:000230619700016">
+          <name>Semiclassical propagation of wavepackets with complex and real   trajectories</name>
+          <description>null</description>
+        </service>
+        <service id="11066" uri="ISI:000227459400019">
+          <name>Spectral analysis and the dynamic response of complex networks</name>
+          <description>null</description>
+        </service>
+        <service id="22281" uri="ISI:000188667000012">
+          <name>Invasion and extinction in the mean field approximation for a spatial   host-pathogen model</name>
+          <description>evolution; predator-prey; host-pathogen; mean-field; spatial</description>
+        </service>
+        <service id="25343" uri="ISI:000185839000012">
+          <name>Robustness of spontaneous pattern formation in spatially distributed   genetic populations</name>
+          <description>null</description>
+        </service>
+        <service id="38035" uri="ISI:000174548800099">
+          <name>Stability and instability of polymorphic populations and the role of   multiple breeding seasons in phase III of Wrights shifting balance   theory</name>
+          <description>null</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="Epstein, IR" type="paperContribution"/>
+        <connection strength="1" to="Bar-Yam, Y" type="paperContribution"/>
+        <connection strength="1" to="de Moura, APS" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="null" uri="Epstein, IR" name="Epstein, IR">
+      <name>Epstein, IR</name>
+      <location lat="42.375309" lng="-71.11306" name="null"/>
+      <connections>
+        <connection strength="1" to="Bar-Yam, Y" type="paperContribution"/> 
+      </connections>
+    </node>
+    <node type="null" uri="Bar-Yam, Y" name="Bar-Yam, Y">
+      <name>Bar-Yam, Y</name>
+      <location lat="39.512816" lng="-87.135511" name="null"/>
+      <connections>
+   		<connection strength="1" to="de Aguiar, MAM" type="paperContribution"/> 
+      </connections>
+    </node>
+    <node type="USP,IF" uri="de Moura, APS" name="de Moura, APS">
+      <name>de Moura, APS</name>
+      <location lat="39.512816" lng="-87.135511" name="USP,IF"/>
+      <servicePool type="onOffer">
+        <service id="1429" uri="ISI:000235008800019">
+          <name>Thin Watts-Strogatz networks</name>
+          <description>null</description>
+        </service>
+        <service id="7696" uri="ISI:000230275000030">
+          <name>Fermi-Dirac statistics and traffic in complex networks</name>
+          <description>null</description>
+        </service>
+        <service id="15504" uri="ISI:000224302300057">
+          <name>Reactions in flows with nonhyperbolic dynamics</name>
+          <description>null</description>
+        </service>
+        <service id="16099" uri="ISI:000223784600047">
+          <name>Chemical and biological activity in three-dimensional flows</name>
+          <description>null</description>
+        </service>
+        <service id="18738" uri="ISI:000221813400024">
+          <name>Biased growth processes and the "rich-get-richer" principle</name>
+          <description>null</description>
+        </service>
+        <service id="25221" uri="ISI:000185756400015">
+          <name>Searching in small-world networks</name>
+          <description>null</description>
+        </service>
+        <service id="26635" uri="ISI:000184582500103">
+          <name>Signatures of small-world and scale-free properties in large computer   programs</name>
+          <description>null</description>
+        </service>
+        <service id="32514" uri="ISI:000179176300065">
+          <name>Countable and uncountable boundaries in chaotic scattering</name>
+          <description>null</description>
+        </service>
+        <service id="38036" uri="ISI:000174548900014">
+          <name>Rainbow transition in chaotic scattering</name>
+          <description>null</description>
+        </service>
+      </servicePool>
+      <connections>
+     	<connection strength="1" to="de Aguiar, MAM" type="paperContribution"/>
+      	<connection strength="1" to="Baptista, MS" type="paperContribution"/>
+      	<connection strength="1" to="Pereira, T" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="USP,IF" uri="Pereira, T" name="Pereira, T">
+      <name>Pereira, T</name>
+      <location lat="-23.5142133" lng="-46.5773876" name="USP,IF"/>
+      <servicePool type="onOffer">
+        <service id="1430" uri="ISI:000235008800114">
+          <name>Global bifurcation destroying the experimental torus T-2</name>
+          <description>null</description>
+        </service>
+        <service id="27023" uri="ISI:000180217900887">
+          <name>Type IV gypsum: Influence of manipulation techniques</name>
+          <description>null</description>
+        </service>
+        <service id="35400" uri="ISI:000176024701095">
+          <name>Retention loss in four types of attachments for overdentures.</name>
+          <description>null</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="de Moura, APS" type="paperContribution"/>
+      </connections>
+    </node>
+    <node type="USP,IQ" uri="Baptista, MS" name="Baptista, MS">
+      <name>Baptista, MS</name>
+      <location lat="39.512816" lng="-87.135511" name="USP,IQ"/>
+      <servicePool type="onOffer">
+        <service id="2918" uri="ISI:000234005900005">
+          <name>Non-transitive maps in phase synchronization</name>
+          <description>chaotic phase synchronization; ergodic theory; temporal mappings</description>
+        </service>
+        <service id="5933" uri="ISI:000231503600028">
+          <name>Poincare recurrence and measure of hyperbolic and nonhyperbolic chaotic   attractors</name>
+          <description>null</description>
+        </service>
+        <service id="18739" uri="ISI:000221813400057">
+          <name>Irrational phase synchronization</name>
+          <description>null</description>
+        </service>
+        <service id="23497" uri="ISI:000187155400001">
+          <name>Integrated chaos-based communication</name>
+          <description>null</description>
+        </service>
+        <service id="24419" uri="ISI:000186385200005">
+          <name>Communication-based on topology preservation of chaotic dynamics</name>
+          <description>parameter space invariants; chaos-based communication; Chuas circuit</description>
+        </service>
+        <service id="24420" uri="ISI:000186385200015">
+          <name>Topology of windows in the high-dimensional parameter space of chaotic   maps</name>
+          <description>chaotic maps; spine; nilpotent loci</description>
+        </service>
+        <service id="26227" uri="ISI:000184992600015">
+          <name>Controlling transient dynamics to communicate with homoclinic chaos</name>
+          <description>null</description>
+        </service>
+        <service id="28465" uri="ISI:000183482400046">
+          <name>Phase synchronization in the perturbed Chua circuit</name>
+          <description>null</description>
+        </service>
+        <service id="29328" uri="ISI:000182450100015">
+          <name>Periodic driving of plasma turbulence</name>
+          <description>null</description>
+        </service>
+        <service id="30758" uri="ISI:000181202400017">
+          <name>Conditions for efficient chaos-based communication</name>
+          <description>null</description>
+        </service>
+        <service id="33930" uri="ISI:000177936100015">
+          <name>Stock market dynamics</name>
+          <description>chaos; econophysics; stock market; dynamics; modeling</description>
+        </service>
+        <service id="35646" uri="ISI:000176552500004">
+          <name>Information transfer in chaos-based communication</name>
+          <description>null</description>
+        </service>
+        <service id="37795" uri="ISI:000174803400018">
+          <name>Statistics of plasma fluctuations in runaway discharges in TCABR tokamak</name>
+          <description>null</description>
+        </service>
+        <service id="40545" uri="ISI:000172594500013">
+          <name>Onset of symmetric plasma turbulence</name>
+          <description>null</description>
+        </service>
+        <service id="41948" uri="ISI:000171067100023">
+          <name>Recurrence in plasma edge turbulence</name>
+          <description>null</description>
+        </service>
+      </servicePool>
+      <connections>
+        <connection strength="1" to="de Moura, APS" type="paperContribution"/>
+      </connections>
+    </node>
+    </nodes>
+</NetworkDescription>

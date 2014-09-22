@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/EvESimNetworkDescription/src"
+    modelPluginID="EvESimNetworkDescription" modelName="Network_description" importerID="org.eclipse.xsd.ecore.importer"
+    copyrightFields="false">
+  <foreignModel>file:/home/reder/Desktop/network_desc_v1.4fin.xsd</foreignModel>
+  <genPackages prefix="Description" basePackage="at.ac.salzburg.fh.network" resource="XML"
+      disposableProviderFactory="true" ecorePackage="network_description.ecore#/">
+    <genClasses ecoreClass="network_description.ecore#//AccessMethodsType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference network_description.ecore#//AccessMethodsType/accessMethod"/>
+    </genClasses>
+    <genClasses ecoreClass="network_description.ecore#//AccessMethodType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network_description.ecore#//AccessMethodType/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network_description.ecore#//AccessMethodType/uri"/>
+    </genClasses>
+    <genClasses ecoreClass="network_description.ecore#//ConnectionsType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference network_description.ecore#//ConnectionsType/connection"/>
+    </genClasses>
+    <genClasses ecoreClass="network_description.ecore#//ConnectionType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network_description.ecore#//ConnectionType/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network_description.ecore#//ConnectionType/strength"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network_description.ecore#//ConnectionType/to"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network_description.ecore#//ConnectionType/type"/>
+    </genClasses>
+    <genClasses ecoreClass="network_description.ecore#//DocumentRoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute network_description.ecore#//DocumentRoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference network_description.ecore#//DocumentRoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference network_description.ecore#//DocumentRoot/xSISchemaLocation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference network_description.ecore#//DocumentRoot/accessMethod"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference network_description.ecore#//DocumentRoot/accessMethods"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference network_description.ecore#//DocumentRoot/connection"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference network_description.ecore#//DocumentRoot/connections"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network_description.ecore#//DocumentRoot/description"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference network_description.ecore#//DocumentRoot/location"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network_description.ecore#//DocumentRoot/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference network_description.ecore#//DocumentRoot/networkDescription"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference network_description.ecore#//DocumentRoot/node"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference network_description.ecore#//DocumentRoot/nodes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference network_description.ecore#//DocumentRoot/service"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference network_description.ecore#//DocumentRoot/servicePool"/>
+    </genClasses>
+    <genClasses ecoreClass="network_description.ecore#//LocationType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network_description.ecore#//LocationType/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network_description.ecore#//LocationType/lat"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network_description.ecore#//LocationType/lng"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network_description.ecore#//LocationType/name"/>
+    </genClasses>
+    <genClasses ecoreClass="network_description.ecore#//NetworkDescriptionType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference network_description.ecore#//NetworkDescriptionType/nodes"/>
+    </genClasses>
+    <genClasses ecoreClass="network_description.ecore#//NodesType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference network_description.ecore#//NodesType/node"/>
+    </genClasses>
+    <genClasses ecoreClass="network_description.ecore#//NodeType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network_description.ecore#//NodeType/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference network_description.ecore#//NodeType/accessMethods"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference network_description.ecore#//NodeType/location"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference network_description.ecore#//NodeType/servicePool"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference network_description.ecore#//NodeType/connections"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network_description.ecore#//NodeType/name1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network_description.ecore#//NodeType/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network_description.ecore#//NodeType/uri"/>
+    </genClasses>
+    <genClasses ecoreClass="network_description.ecore#//ServicePoolType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference network_description.ecore#//ServicePoolType/service"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network_description.ecore#//ServicePoolType/type"/>
+    </genClasses>
+    <genClasses ecoreClass="network_description.ecore#//ServiceType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network_description.ecore#//ServiceType/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network_description.ecore#//ServiceType/description"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference network_description.ecore#//ServiceType/accessMethods"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network_description.ecore#//ServiceType/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network_description.ecore#//ServiceType/name1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute network_description.ecore#//ServiceType/uri"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

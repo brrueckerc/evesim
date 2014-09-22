@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+    <name>earth.kml</name>
+    <StyleMap id="style_PC">
+        <Pair>
+            <key>soapod_node</key>
+            <styleUrl>#soapod_node</styleUrl>
+        </Pair>
+        <Pair>
+            <key>real_node</key>
+            <styleUrl>#real_node</styleUrl>
+        </Pair>
+    </StyleMap>
+    
+    <Style id="EveMonitoringNode_OK">
+        <IconStyle>
+            <color>ffffffff</color>
+            <scale>1</scale>
+            <Icon>
+                <href>${static_context}/earth/pic/Circle_Green.png</href>
+            </Icon>
+            <hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+        </IconStyle>
+        <BalloonStyle> 
+        <text><![CDATA[<table width="400px"><tr><td> $[description] </td></tr></table> ]]></text> 
+        </BalloonStyle> 
+		 <LabelStyle>
+            <color>ffffffff</color>
+        </LabelStyle>
+    </Style>
+    
+     <Style id="EveMonitoringNode_FAIL">
+        <IconStyle>
+            <color>ffffffff</color>
+            <scale>1</scale>
+            <Icon>
+                <href>${static_context}/earth/pic/Circle_Red.png</href>
+            </Icon>
+            <hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+        </IconStyle>
+        <BalloonStyle> 
+        <text><![CDATA[<table width="400px"><tr><td> $[description] </td></tr></table> ]]></text> 
+        </BalloonStyle> 
+
+    </Style>
+    
+     <Style id="EveMonitoringNode_RECOVERING">
+        <IconStyle>
+            <color>ffffffff</color>
+            <scale>1</scale>
+            <Icon>
+                <href>${static_context}/earth/pic/Circle_Yellow.png</href>
+            </Icon>
+            <hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+        </IconStyle>
+        <BalloonStyle> 
+        <text><![CDATA[<table width="400px"><tr><td> $[description] </td></tr></table> ]]></text> 
+        </BalloonStyle> 
+
+    </Style>
+    
+    
+    
+    <Style id="EveComponent">
+        <IconStyle>
+            <color>ffffffff</color>
+            <scale>1</scale>
+            <Icon>
+                <href>${static_context}/earth/pic/Flag1_Green.png</href>
+            </Icon>
+            <hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+        </IconStyle>
+        <LabelStyle>
+            <color>ffffffff</color>
+        </LabelStyle>
+    </Style>
+    
+    <Style id="EveComponent">
+        <IconStyle>
+            <color>ffffffff</color>
+            <scale>1.9</scale>
+            <Icon>
+                <href>${static_context}/earth/pic/Flag1_Green.png</href>
+            </Icon>
+            <hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+        </IconStyle>
+        <LabelStyle>
+            <color>ffffffff</color>
+        </LabelStyle>
+    </Style>
+    <Style id="EveConnection_strength_1">
+      <LineStyle>
+        <color>afff6611</color>
+        <width>1</width>
+      </LineStyle>
+    </Style>
+      <Style id="EveConnection_strength_2">
+       <LineStyle>
+         <color>b5ff6611</color>
+         <width>2</width>
+       </LineStyle>
+     </Style>
+      <Style id="EveConnection_strength_3">
+       <LineStyle>
+         <color>b9ff6611</color>
+         <width>3</width>
+       </LineStyle>
+     </Style>
+	     <Style id="EveConnection_strength_4">
+      <LineStyle>
+        <color>bfff6611</color>
+        <width>4</width>
+      </LineStyle>
+    </Style>
+      <Style id="EveConnection_strength_5">
+       <LineStyle>
+         <color>c3ff6611</color>
+         <width>5</width>
+       </LineStyle>
+     </Style>
+    <!-- END OF THE STYLE DEFINITIONS -->
+
+	</Document>
+</kml>

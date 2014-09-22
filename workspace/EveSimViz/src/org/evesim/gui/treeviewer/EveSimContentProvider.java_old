@@ -1,0 +1,52 @@
+package org.evesim.gui.treeviewer;
+
+import org.eclipse.jface.viewers.IStructuredContentProvider;
+import org.eclipse.jface.viewers.ITreeContentProvider;
+import org.eclipse.jface.viewers.Viewer;
+import org.evesim.*;
+
+public class EveSimContentProvider implements ITreeContentProvider,IStructuredContentProvider{
+
+	@Override
+	public Object[] getChildren(Object parentElement) {
+		return getElements(parentElement);
+	}
+
+	@Override
+	public Object getParent(Object element) {
+		if (element instanceof EveSimulation) {
+			return null;
+		} else if(element instanceof EveComponent){
+			return ((EveComponent)element).getParent();
+		}
+		return null;
+	}
+
+	@Override
+	public boolean hasChildren(Object element) {
+		if (element instanceof EveComponent) {
+			return ((EveComponent)element).getChildren().size()>0;
+		}
+		return false;
+	}
+
+	@Override
+	public Object[] getElements(Object inputElement) {
+		if (inputElement instanceof EveComponent) {
+			return ((EveComponent) inputElement).getChildren().toArray();
+		}
+		return new Object[0];
+	}
+
+	@Override
+	public void dispose() {
+		
+	}
+
+	@Override
+	public void inputChanged(Viewer viewer, Object oldInput, Object newInput) {
+
+		
+	}
+
+}

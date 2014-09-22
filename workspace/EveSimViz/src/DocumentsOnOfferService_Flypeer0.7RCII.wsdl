@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="DocumentsOnOffer"
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<wsdl:types>
+		<xs:schema attributeFormDefault="qualified"	elementFormDefault="qualified" targetNamespace="http://ws.services.flypeer.ipti.org.br">
+			<xs:element name="documentsOnOffer">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" name="demandedService" nillable="true" type="xs:string" />
+						<xs:element minOccurs="0" name="startTimeStamp"	nillable="true" type="xs:long" />
+						<xs:element minOccurs="0" name="searchCount" nillable="true" type="xs:int" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="returnService">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" name="returnService" nillable="true" type="xs:string" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:schema>
+	</wsdl:types>
+
+	<!--Every parameter has to be specified (Input Parameter)-->
+	<wsdl:message name="demandedService">
+		<wsdl:part name="demandedService" element="demandedService" />
+	</wsdl:message>
+
+	<wsdl:message name="startTimeStamp">
+		<wsdl:part name="startTimeStamp" element="startTimeStamp" />
+	</wsdl:message>
+
+	<wsdl:message name="searchCount">
+		<wsdl:part name="searchCount" element="searchCount" />
+	</wsdl:message>
+
+	<!--Every parameter has to be specified (Output Parameter)-->
+	<wsdl:message name="returnService">
+		<wsdl:part name="returnService" element="returnService" />
+	</wsdl:message>
+
+	<!--Define Service Operation-->
+	<wsdl:portType name="DocumentsOnOffer">
+		<wsdl:operation name="documentsOnOffer">
+			<wsdl:input message="demandedService" />
+			<wsdl:input message="startTimeStamp" />
+			<wsdl:input message="searchCount" />
+			<wsdl:output message="returnService" />
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<!--Define Service Name-->
+	<wsdl:service name="FLYPEER-DOCUMENTS-ON-OFFER">
+		<wsdl:documentation>Documents On Offer Service</wsdl:documentation>
+	</wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://www.ibm.com/wbse"
+	xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://www.ibm.com/wbse"
+	xmlns:intf="http://www.ibm.com/wbse" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<wsdl:service name="FLYPEER://FLYPEER-SEMANTICSEARCH-SERVICE">
+		<wsdl:documentation>A test service</wsdl:documentation>
+	</wsdl:service>
+
+	<wsdl:message name="inputParameter">
+		<wsdl:part name="inputParameter" type="xs:string" />
+	</wsdl:message>
+
+	<wsdl:message name="outputParameter">
+		<wsdl:part name="outputParameter" type="xs:string" />
+	</wsdl:message>
+
+	<wsdl:portType name="doService">
+		<wsdl:operation name="process">
+			<wsdl:input message="inputParameter" />
+			<wsdl:output message="outputParameter" />
+		</wsdl:operation>
+	</wsdl:portType>
+
+</wsdl:definitions>

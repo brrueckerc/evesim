@@ -1,0 +1,91 @@
+<!--
+  copyright (c) 2009 google inc.
+
+  You are free to copy and use this sample.
+  License can be found here: http://code.google.com/apis/ajaxsearch/faq/#license
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>EveSim Google Earth Visualization</title>
+<script
+	src="http://www.google.com/jsapi?key=ABQIAAAAiDti49hvoQaEWJCzjw2inxT2yXp_ZAY8_ufC3CFXhHIE1NvwkxR7qYNXSbZW8O3aD70GvuATYVtU6Q"></script>
+
+<script type="text/javascript">
+    HTTP_GET_VARS=new Array();
+	strGET=document.location.search.substr(1,document.location.search.length);
+	if(strGET!='')
+	    {
+	    gArr=strGET.split('&');
+	    for(i=0;i<gArr.length;++i)
+	        {
+	        v='';vArr=gArr[i].split('=');
+	        if(vArr.length>1){v=vArr[1];}
+	        HTTP_GET_VARS[unescape(vArr[0])]=unescape(v);
+	        }
+	    }
+	
+	function GET(v)
+	{
+	if(!HTTP_GET_VARS[v]){return 'undefined';}
+	return HTTP_GET_VARS[v];
+	}
+	        
+    var ge;
+	google.load("earth", "1", {'other_params': 'sensor=false' });
+
+    function init() {
+      var content = document.getElementById('content');
+
+      google.earth.createInstance('content', initCB, failureCB);
+    }
+
+    function initCB(instance) {
+      ge = instance;
+      ge.getWindow().setVisibility(true);
+
+      // add a navigation control
+      ge.getNavigationControl().setVisibility(ge.VISIBILITY_AUTO);
+
+      // add some layers
+      //ge.getLayerRoot().enableLayerById(ge.LAYER_BORDERS, true);
+      //ge.getLayerRoot().enableLayerById(ge.LAYER_ROADS, true);
+
+      //document.getElementById('installed-plugin-version').innerHTML = ge.getPluginVersion().toString();
+
+	  createNetworkLink();
+    }
+
+    function failureCB(errorCode) {
+    }
+
+    function createNetworkLink() {
+      var networkLink = ge.createNetworkLink("");
+      networkLink.setDescription("NetworkLink open to fetched content");
+      networkLink.setName("Open NetworkLink");
+      networkLink.setFlyToView(false);
+      //networkLink.setFlyToView(true);
+
+      // create a Link object
+      var link = ge.createLink("");
+
+      link.setHref("${kml_url}");
+      link.setRefreshMode(ge.REFRESH_ON_INTERVAL);
+      link.setRefreshInterval(5); // refresh every 20 seconds
+      
+      // attach the Link to the NetworkLink
+      networkLink.setLink(link);
+
+      // add the NetworkLink feature to Earth
+      ge.getFeatures().appendChild(networkLink);
+    }
+
+    google.setOnLoadCallback(init);
+    </script>
+</head>
+<body style="font-family: Arial; font-size: 13px; border: 0 none;">
+<div id="content" style="width: 100%; height: 100%;"></div>
+</body>
+</html>

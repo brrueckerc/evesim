@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.evesim.presentation.EvesimModelWizardID"
+            name="%_UI_EvesimModelWizard_label"
+            class="org.evesim.presentation.EvesimModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/EvesimModelFile.gif">
+         <description>%_UI_EvesimModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+      <wizard
+            category="SimWizards.category"
+            class="org.evesim.presentation.EveHistWizard"
+            icon="icons/evesim_logo.ico"
+            id="EveSimViz.editor.wizard2"
+            name="New EvESim History Simulation">
+      </wizard>
+      <category
+            id="SimWizards.category"
+            name="Simulation Wizards">
+      </category>
+      <wizard
+            category="SimWizards.category"
+            class="org.evesim.presentation.EveBarabWizard"
+            icon="icons/evesim_logo.ico"
+            id="EveSimViz.editor.wizard3"
+            name="New EvESim Barabasi-Albert Simulation">
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="org.evesim.presentation.EvesimEditorID"
+            name="%_UI_EvesimEditor_label"
+            icon="icons/full/obj16/EvesimModelFile.gif"
+            extensions="evesim"
+            class="org.evesim.presentation.EvesimEditor"
+            contributorClass="org.evesim.presentation.EvesimActionBarContributor">
+      </editor>
+   </extension>
+
+
+
+
+
+
+
+</plugin>

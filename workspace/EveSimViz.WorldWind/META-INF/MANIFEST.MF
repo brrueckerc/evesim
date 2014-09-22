@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: WorldWind
+Bundle-SymbolicName: EveSimViz.WorldWind; singleton:=true
+Bundle-Version: 1.0.0.0
+Bundle-Activator: org.evesim.worldwind.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.emf.ecore,
+ EvESim;bundle-version="1.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: org.evesim.worldwind.views
+Bundle-ClassPath: .,
+ lib/gluegen-rt.jar,
+ lib/jogl.jar,
+ lib/worldwind.jar
+Bundle-Vendor: Salzburg University of Applied Sciences

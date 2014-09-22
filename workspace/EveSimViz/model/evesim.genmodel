@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/EveSimViz/src_gen"
+    modelPluginID="EveSimViz" modelName="Evesim" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="6.0" copyrightFields="false" interfaceNamePattern="" classNamePattern="">
+  <foreignModel>evesim.ecore</foreignModel>
+  <genPackages prefix="Org" disposableProviderFactory="true" ecorePackage="evesim.ecore#/">
+    <nestedGenPackages prefix="Evesim" disposableProviderFactory="true" ecorePackage="evesim.ecore#//evesim">
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="evesim.ecore#//evesim/EveNodeType">
+        <genEnumLiterals ecoreEnumLiteral="evesim.ecore#//evesim/EveNodeType/server"/>
+        <genEnumLiterals ecoreEnumLiteral="evesim.ecore#//evesim/EveNodeType/client"/>
+      </genEnums>
+      <genDataTypes ecoreDataType="evesim.ecore#//evesim/SessionID"/>
+      <genDataTypes ecoreDataType="evesim.ecore#//evesim/URI"/>
+      <genDataTypes ecoreDataType="evesim.ecore#//evesim/Thread"/>
+      <genDataTypes ecoreDataType="evesim.ecore#//evesim/UUID"/>
+      <genDataTypes ecoreDataType="evesim.ecore#//evesim/EveComponentHashtable"/>
+      <genDataTypes ecoreDataType="evesim.ecore#//evesim/JettyServer"/>
+      <genDataTypes ecoreDataType="evesim.ecore#//evesim/KmlContainer"/>
+      <genDataTypes ecoreDataType="evesim.ecore#//evesim/Class"/>
+      <genClasses image="false" ecoreClass="evesim.ecore#//evesim/EveComponent">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference evesim.ecore#//evesim/EveComponent/attachedConnections"/>
+        <genFeatures property="None" createChild="false" propertyCategory="General"
+            propertyDescription="" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/EveComponent/uuid"/>
+        <genFeatures createChild="false" propertyCategory="General" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/EveComponent/uri"/>
+        <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference evesim.ecore#//evesim/EveComponent/parent"/>
+        <genFeatures property="None" createChild="false" propertyCategory="General"
+            ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/EveComponent/sessionID"/>
+        <genFeatures createChild="false" propertyCategory="General" propertyDescription=""
+            ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/EveComponent/name"/>
+        <genFeatures createChild="false" propertyCategory="General" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/EveComponent/description"/>
+        <genFeatures property="None" children="true" createChild="true" propertyCategory="General"
+            ecoreFeature="ecore:EReference evesim.ecore#//evesim/EveComponent/children"/>
+        <genFeatures createChild="false" propertyCategory="Location.Coordinates" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/EveComponent/locLongitude"/>
+        <genFeatures createChild="false" propertyCategory="Location.Coordinates" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/EveComponent/locLatitude"/>
+        <genFeatures createChild="false" propertyCategory="Location" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/EveComponent/locCountry"/>
+        <genFeatures createChild="false" propertyCategory="Location" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/EveComponent/locCity"/>
+        <genFeatures createChild="false" propertyCategory="Location" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/EveComponent/locPONr"/>
+        <genFeatures createChild="false" propertyCategory="Location" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/EveComponent/locAddress"/>
+        <genFeatures createChild="false" propertyCategory="Location" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/EveComponent/locLocation"/>
+        <genFeatures createChild="false" propertyCategory="Network" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/EveComponent/netIP"/>
+        <genFeatures createChild="false" propertyCategory="Network" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/EveComponent/netUrl"/>
+        <genFeatures children="true" createChild="true" propertyCategory="" propertyDescription=""
+            propertyMultiLine="true" ecoreFeature="ecore:EReference evesim.ecore#//evesim/EveComponent/location"/>
+        <genOperations ecoreOperation="evesim.ecore#//evesim/EveComponent/addChild">
+          <genParameters ecoreParameter="evesim.ecore#//evesim/EveComponent/addChild/child"/>
+        </genOperations>
+        <genOperations ecoreOperation="evesim.ecore#//evesim/EveComponent/execute"/>
+        <genOperations ecoreOperation="evesim.ecore#//evesim/EveComponent/removeChild">
+          <genParameters ecoreParameter="evesim.ecore#//evesim/EveComponent/removeChild/child"/>
+        </genOperations>
+        <genOperations ecoreOperation="evesim.ecore#//evesim/EveComponent/removeChild.1">
+          <genParameters ecoreParameter="evesim.ecore#//evesim/EveComponent/removeChild.1/uuid"/>
+        </genOperations>
+        <genOperations ecoreOperation="evesim.ecore#//evesim/EveComponent/lookupComponent">
+          <genParameters ecoreParameter="evesim.ecore#//evesim/EveComponent/lookupComponent/uuid"/>
+        </genOperations>
+        <genOperations ecoreOperation="evesim.ecore#//evesim/EveComponent/isLocationValid"/>
+        <genOperations ecoreOperation="evesim.ecore#//evesim/EveComponent/instanceOf">
+          <genParameters ecoreParameter="evesim.ecore#//evesim/EveComponent/instanceOf/c"/>
+          <genParameters ecoreParameter="evesim.ecore#//evesim/EveComponent/instanceOf/className"/>
+        </genOperations>
+        <genOperations ecoreOperation="evesim.ecore#//evesim/EveComponent/instanceOf.1">
+          <genParameters ecoreParameter="evesim.ecore#//evesim/EveComponent/instanceOf.1/className"/>
+        </genOperations>
+        <genOperations ecoreOperation="evesim.ecore#//evesim/EveComponent/reset"/>
+        <genOperations ecoreOperation="evesim.ecore#//evesim/EveComponent/getRootComponent"/>
+        <genOperations ecoreOperation="evesim.ecore#//evesim/EveComponent/getConnections"/>
+      </genClasses>
+      <genClasses ecoreClass="evesim.ecore#//evesim/EveSimulation">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/EveSimulation/stepDuration"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/EveSimulation/stepCount"/>
+        <genOperations ecoreOperation="evesim.ecore#//evesim/EveSimulation/simStart"/>
+      </genClasses>
+      <genClasses ecoreClass="evesim.ecore#//evesim/EveMonitor">
+        <genFeatures createChild="false" propertyCategory="Monitoring" propertyDescription="Sleep time between monitoring cycles in seconds."
+            ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/EveMonitor/sleepTime"/>
+        <genOperations ecoreOperation="evesim.ecore#//evesim/EveMonitor/startMonitoring"/>
+        <genOperations ecoreOperation="evesim.ecore#//evesim/EveMonitor/stopMonitoring"/>
+      </genClasses>
+      <genClasses ecoreClass="evesim.ecore#//evesim/EveNode">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference evesim.ecore#//evesim/EveNode/messageQueue"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference evesim.ecore#//evesim/EveNode/server"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/EveNode/nodeType"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/EveNode/serverUrl"/>
+        <genOperations ecoreOperation="evesim.ecore#//evesim/EveNode/submitMessage">
+          <genParameters ecoreParameter="evesim.ecore#//evesim/EveNode/submitMessage/message"/>
+        </genOperations>
+      </genClasses>
+      <genClasses ecoreClass="evesim.ecore#//evesim/EveNodeServer">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference evesim.ecore#//evesim/EveNodeServer/node"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/EveNodeServer/jettyServer"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/EveNodeServer/serverHost"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/EveNodeServer/serverPort"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/EveNodeServer/thread"/>
+        <genOperations ecoreOperation="evesim.ecore#//evesim/EveNodeServer/init"/>
+        <genOperations ecoreOperation="evesim.ecore#//evesim/EveNodeServer/start"/>
+        <genOperations ecoreOperation="evesim.ecore#//evesim/EveNodeServer/stop"/>
+        <genOperations ecoreOperation="evesim.ecore#//evesim/EveNodeServer/getServerBase"/>
+      </genClasses>
+      <genClasses ecoreClass="evesim.ecore#//evesim/EvePrototype">
+        <genOperations ecoreOperation="evesim.ecore#//evesim/EvePrototype/createAgentFromPrototype"/>
+      </genClasses>
+      <genClasses ecoreClass="evesim.ecore#//evesim/EveAgent">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/EveAgent/prototypeUUID"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference evesim.ecore#//evesim/EveAgent/prototype"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/EveAgent/agentPoolUUID"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference evesim.ecore#//evesim/EveAgent/agentPool"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference evesim.ecore#//evesim/EveAgent/demandedServices"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference evesim.ecore#//evesim/EveAgent/offeredServices"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference evesim.ecore#//evesim/EveAgent/localServicePool"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/EveAgent/betweeness"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/EveAgent/type"/>
+        <genOperations ecoreOperation="evesim.ecore#//evesim/EveAgent/execute"/>
+      </genClasses>
+      <genClasses ecoreClass="evesim.ecore#//evesim/EveService"/>
+      <genClasses ecoreClass="evesim.ecore#//evesim/EveConnection">
+        <genFeatures createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference evesim.ecore#//evesim/EveConnection/connectedComponent"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/EveConnection/strength"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/EveConnection/connected"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/EveConnection/type"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/EveConnection/directional"/>
+        <genOperations ecoreOperation="evesim.ecore#//evesim/EveConnection/isValid"/>
+        <genOperations ecoreOperation="evesim.ecore#//evesim/EveConnection/getOpposite">
+          <genParameters ecoreParameter="evesim.ecore#//evesim/EveConnection/getOpposite/component"/>
+        </genOperations>
+      </genClasses>
+      <genClasses ecoreClass="evesim.ecore#//evesim/EveLocation">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/EveLocation/locLongitude"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/EveLocation/locLatitude"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/EveLocation/locCountry"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/EveLocation/locCity"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/EveLocation/locPONr"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/EveLocation/locAddress"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/EveLocation/locLocation"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="evesim.ecore#//evesim/EveMessageSink">
+        <genOperations ecoreOperation="evesim.ecore#//evesim/EveMessageSink/submitMessage">
+          <genParameters ecoreParameter="evesim.ecore#//evesim/EveMessageSink/submitMessage/message"/>
+        </genOperations>
+      </genClasses>
+      <genClasses image="false" ecoreClass="evesim.ecore#//evesim/Runnable">
+        <genOperations ecoreOperation="evesim.ecore#//evesim/Runnable/run"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="evesim.ecore#//evesim/IControllable">
+        <genOperations ecoreOperation="evesim.ecore#//evesim/IControllable/start"/>
+        <genOperations ecoreOperation="evesim.ecore#//evesim/IControllable/stop"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="evesim.ecore#//evesim/IAdaptable"/>
+      <genClasses image="false" ecoreClass="evesim.ecore#//evesim/IKmlProvider">
+        <genOperations ecoreOperation="evesim.ecore#//evesim/IKmlProvider/kmlGetStyle"/>
+        <genOperations ecoreOperation="evesim.ecore#//evesim/IKmlProvider/kmlGetVisualisation">
+          <genParameters ecoreParameter="evesim.ecore#//evesim/IKmlProvider/kmlGetVisualisation/kmlContainer"/>
+        </genOperations>
+      </genClasses>
+      <genClasses image="false" ecoreClass="evesim.ecore#//evesim/Serializable"/>
+      <genClasses image="false" ecoreClass="evesim.ecore#//evesim/Throwable"/>
+      <nestedGenPackages prefix="Timer" disposableProviderFactory="true" ecorePackage="evesim.ecore#//evesim/timer">
+        <genClasses ecoreClass="evesim.ecore#//evesim/timer/EveTimer">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/timer/EveTimer/timerThread"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/timer/EveTimer/running"/>
+          <genOperations ecoreOperation="evesim.ecore#//evesim/timer/EveTimer/start"/>
+          <genOperations ecoreOperation="evesim.ecore#//evesim/timer/EveTimer/run"/>
+          <genOperations ecoreOperation="evesim.ecore#//evesim/timer/EveTimer/stop"/>
+        </genClasses>
+        <genClasses ecoreClass="evesim.ecore#//evesim/timer/EveRepeatingTimer">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/timer/EveRepeatingTimer/maxRepeat"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/timer/EveRepeatingTimer/sleep"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/timer/EveRepeatingTimer/counter"/>
+          <genOperations ecoreOperation="evesim.ecore#//evesim/timer/EveRepeatingTimer/run"/>
+        </genClasses>
+        <genClasses ecoreClass="evesim.ecore#//evesim/timer/EveStartingTimer">
+          <genOperations ecoreOperation="evesim.ecore#//evesim/timer/EveStartingTimer/run"/>
+        </genClasses>
+        <genClasses ecoreClass="evesim.ecore#//evesim/timer/EveFunctionTimer">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/timer/EveFunctionTimer/counter"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/timer/EveFunctionTimer/maxRepeat"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/timer/EveFunctionTimer/isExponential"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/timer/EveFunctionTimer/isLogarithmic"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/timer/EveFunctionTimer/gradient"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/timer/EveFunctionTimer/constant"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/timer/EveFunctionTimer/sleep"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/timer/EveFunctionTimer/power"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/timer/EveFunctionTimer/isPower"/>
+          <genOperations ecoreOperation="evesim.ecore#//evesim/timer/EveFunctionTimer/run"/>
+          <genOperations ecoreOperation="evesim.ecore#//evesim/timer/EveFunctionTimer/setExponetial"/>
+          <genOperations ecoreOperation="evesim.ecore#//evesim/timer/EveFunctionTimer/setLogarithmic"/>
+          <genOperations ecoreOperation="evesim.ecore#//evesim/timer/EveFunctionTimer/setPower"/>
+        </genClasses>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Usecase" disposableProviderFactory="true" ecorePackage="evesim.ecore#//evesim/usecase">
+        <nestedGenPackages prefix="SemanticSearch" disposableProviderFactory="true"
+            ecorePackage="evesim.ecore#//evesim/usecase/semanticSearch">
+          <genClasses ecoreClass="evesim.ecore#//evesim/usecase/semanticSearch/EveAgentSemanticSearch"/>
+          <genClasses ecoreClass="evesim.ecore#//evesim/usecase/semanticSearch/EveServiceSemanticSearch"/>
+        </nestedGenPackages>
+        <nestedGenPackages prefix="SocialNetworkAnalysis" disposableProviderFactory="true"
+            ecorePackage="evesim.ecore#//evesim/usecase/socialNetworkAnalysis">
+          <genClasses ecoreClass="evesim.ecore#//evesim/usecase/socialNetworkAnalysis/EveAgentSNA">
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/usecase/socialNetworkAnalysis/EveAgentSNA/editingPropability"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/usecase/socialNetworkAnalysis/EveAgentSNA/deletingPropability"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/usecase/socialNetworkAnalysis/EveAgentSNA/creatingPropability"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/usecase/socialNetworkAnalysis/EveAgentSNA/started"/>
+          </genClasses>
+          <genClasses ecoreClass="evesim.ecore#//evesim/usecase/socialNetworkAnalysis/EveGatewaySNA"/>
+        </nestedGenPackages>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Msg" disposableProviderFactory="true" ecorePackage="evesim.ecore#//evesim/msg">
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="evesim.ecore#//evesim/msg/EveFileMessageSinkType">
+          <genEnumLiterals ecoreEnumLiteral="evesim.ecore#//evesim/msg/EveFileMessageSinkType/text"/>
+        </genEnums>
+        <genDataTypes ecoreDataType="evesim.ecore#//evesim/msg/EveMessageHashtable"/>
+        <genClasses ecoreClass="evesim.ecore#//evesim/msg/EveMessage">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/msg/EveMessage/messageUUID"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/msg/EveMessage/sessionUUID"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/msg/EveMessage/senderUUID"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/msg/EveMessage/recieverUUID"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/msg/EveMessage/timestamp"/>
+        </genClasses>
+        <genClasses ecoreClass="evesim.ecore#//evesim/msg/EveLogMessage">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/msg/EveLogMessage/message"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/msg/EveLogMessage/detail"/>
+        </genClasses>
+        <genClasses ecoreClass="evesim.ecore#//evesim/msg/EveUpdateMessage">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/msg/EveUpdateMessage/attributeName"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/msg/EveUpdateMessage/oldValue"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/msg/EveUpdateMessage/newValue"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/msg/EveUpdateMessage/featureID"/>
+        </genClasses>
+        <genClasses ecoreClass="evesim.ecore#//evesim/msg/EveSerializedMessage">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/msg/EveSerializedMessage/payload"/>
+        </genClasses>
+        <genClasses ecoreClass="evesim.ecore#//evesim/msg/EveMessageBundle">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference evesim.ecore#//evesim/msg/EveMessageBundle/messages"/>
+        </genClasses>
+        <genClasses ecoreClass="evesim.ecore#//evesim/msg/EveDataMessage">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/msg/EveDataMessage/hashtable"/>
+        </genClasses>
+        <genClasses ecoreClass="evesim.ecore#//evesim/msg/EveFileMessageSink">
+          <genFeatures createChild="false" propertyCategory="File" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/msg/EveFileMessageSink/filename">
+            <propertyFilterFlags>file</propertyFilterFlags>
+          </genFeatures>
+          <genFeatures createChild="false" propertyCategory="File" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/msg/EveFileMessageSink/filetype">
+            <propertyFilterFlags>file</propertyFilterFlags>
+          </genFeatures>
+          <genFeatures createChild="false" propertyCategory="File" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/msg/EveFileMessageSink/append">
+            <propertyFilterFlags>file</propertyFilterFlags>
+          </genFeatures>
+          <genFeatures createChild="false" propertyCategory="File" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/msg/EveFileMessageSink/delimeterField">
+            <propertyFilterFlags>file</propertyFilterFlags>
+          </genFeatures>
+        </genClasses>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Net" disposableProviderFactory="true" ecorePackage="evesim.ecore#//evesim/net">
+        <nestedGenPackages prefix="Http" disposableProviderFactory="true" ecorePackage="evesim.ecore#//evesim/net/http"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Monitor" disposableProviderFactory="true" ecorePackage="evesim.ecore#//evesim/monitor">
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="evesim.ecore#//evesim/monitor/NodeStatus">
+          <genEnumLiterals ecoreEnumLiteral="evesim.ecore#//evesim/monitor/NodeStatus/OK"/>
+          <genEnumLiterals ecoreEnumLiteral="evesim.ecore#//evesim/monitor/NodeStatus/FAIL"/>
+          <genEnumLiterals ecoreEnumLiteral="evesim.ecore#//evesim/monitor/NodeStatus/RECOVERING"/>
+        </genEnums>
+        <genClasses ecoreClass="evesim.ecore#//evesim/monitor/EveMonitorNode">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evesim.ecore#//evesim/monitor/EveMonitorNode/nodeStatus"/>
+        </genClasses>
+        <genClasses ecoreClass="evesim.ecore#//evesim/monitor/EveMonitorPeerGroup"/>
+      </nestedGenPackages>
+    </nestedGenPackages>
+  </genPackages>
+</genmodel:GenModel>

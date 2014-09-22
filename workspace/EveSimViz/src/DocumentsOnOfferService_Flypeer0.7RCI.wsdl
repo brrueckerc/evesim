@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://www.ibm.com/wbse"
+	xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://www.ibm.com/wbse"
+	xmlns:intf="http://www.ibm.com/wbse" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	
+	<!--Every parameter has to be specified (Input Parameter)-->
+	<wsdl:message name="demandedService">
+		<wsdl:part name="demandedService" type="xs:string" />
+	</wsdl:message>
+	
+	<wsdl:message name="startTimeStamp">
+		<wsdl:part name="startTimeStamp" type="xs:long" />
+	</wsdl:message>
+	
+	<wsdl:message name="searchCount">
+		<wsdl:part name="searchCount" type="xs:int" />
+	</wsdl:message>
+	
+	<!--Every parameter has to be specified (Output Parameter)-->
+	<wsdl:message name="returnService">
+		<wsdl:part name="returnService" type="xs:string" />
+	</wsdl:message>
+	
+	<!--Define Service Operation-->
+	<wsdl:portType name="ProcessDemandingRequest">
+		<wsdl:operation name="process">
+			<wsdl:input message="demandedService" />
+			<wsdl:input message="startTimeStamp" />
+			<wsdl:input message="searchCount"/>
+			<wsdl:output message="returnService" />
+		</wsdl:operation>
+	</wsdl:portType>
+	
+	<!--Define Service Name-->
+	<wsdl:service name="FLYPEER://FLYPEER-DOCUMENTS-ON-OFFER">
+		<wsdl:documentation>Documents On Offer Service</wsdl:documentation>
+	</wsdl:service>
+</wsdl:definitions>

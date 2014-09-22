@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="splashExtension" name="Splash Extensions" schema="schema/splashExtension.exsd"/>
+
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            id="EveSim"
+            name="EveSim">
+      </category>
+      <view
+            category="EveSim"
+            class="org.evesim.gui.views.EveSimulationsView"
+            id="org.evesim.gui.views.EveSimulationsView"
+            name="EveSimulations">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="org.evesim.earth.command.EarthGeocoderLookupHandler"
+            description="Lookup Coordinates"
+            id="EveSimViz.earthGeocoderLookup"
+            name="Lookup Coordinates">
+         <defaultHandler
+               class="org.evesim.earth.command.EarthGeocoderLookupHandler">
+               <parameter
+                     name="EveSimViz.parameter4"
+                     value="EveSimViz.parameter4">
+               </parameter>
+         </defaultHandler>
+      </command>
+      <command
+            id="EveSimViz.openEarth"
+            name="Open in Google Earth">
+         <defaultHandler
+               class="org.evesim.earth.command.EarthOpenKMLHandler">
+            <parameter
+                  name="EveSimViz.parameter1"
+                  value="EveSimViz.parameter1">
+            </parameter>
+         </defaultHandler>
+      </command>
+      <command
+            id="OpenXMLasEvesim.command"
+            name="Open XML as Evesim">
+         <defaultHandler
+               class="org.evesim.xml.command.OpenXmlAsEvesim">
+            <parameter
+                  name="EveSimViz.parameter1"
+                  value="EveSimViz.parameter1">
+            </parameter>
+         </defaultHandler>
+      </command>
+      <command
+            id="EveSimViz.startSimulation"
+            name="Start Simulation">
+         <defaultHandler
+               class="org.evesim.gui.handler.EveSimPlayHandler">
+            <parameter
+                  name="EveSimViz.parameter1"
+                  value="EveSimViz.parameter1">
+            </parameter>
+         </defaultHandler>
+      </command>
+      <command
+            id="EveSimViz.stopSimulation"
+            name="Stop Simulation">
+         <defaultHandler
+               class="org.evesim.gui.handler.EveSimPlayHandler">
+            <parameter
+                  name="EveSimViz.parameter1"
+                  value="EveSimViz.parameter1">
+            </parameter>
+         </defaultHandler>
+      </command>
+      <command
+            id="EveSimViz.startEveLocalServer"
+            name="Start Local Server">
+         <defaultHandler
+               class="org.evesim.earth.command.EveLocalServerCommand">
+         </defaultHandler>
+      </command>
+      <command
+            id="EveSimViz.stopEveLocalServer"
+            name="Stop Local Server">
+         <defaultHandler
+               class="org.evesim.earth.command.EveLocalServerCommand">
+         </defaultHandler>
+      </command>
+      <command
+            defaultHandler="org.evesim.facebook.ImportFromFacebook"
+            id="EveSimViz.ImportFromFacebook"
+            name="Import From Facebook">
+      </command>
+
+   </extension>
+   <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            commandId="org.eclipse.ui.file.exit"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="ALT+F4">
+      </key>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="toolbar:org.eclipse.ui.main.toolbar">
+         <toolbar
+               id="EveSimViz.toolbar1">
+            <command
+                  commandId="EveSimViz.startSimulation"
+                  icon="icons/evesim_logo_48x48.png"
+                  label="Start Simulation"
+                  style="push">
+            </command>
+            <command
+                  commandId="EveSimViz.stopSimulation"
+                  icon="icons/evesim_stop_48x48.png"
+                  label="Stop Simulation"
+                  style="push">
+            </command>
+            <command
+                  commandId="OpenXMLasEvesim.command"
+                  icon="icons/evesim_import_48x48.png"
+                  label="Open Network Description XML"
+                  style="push">
+            </command>
+            <command
+                  commandId="EveSimViz.openEarth"
+                  icon="icons/evesim_export_48x48.png"
+                  label="Open in Google Earth"
+                  style="push">
+            </command>
+            <command
+                  commandId="EveSimViz.startEveLocalServer"
+                  icon="icons/evesim_startServer_48x48.png"
+                  label="Start Local Server"
+                  style="push">
+            </command>
+            <command
+                  commandId="EveSimViz.stopEveLocalServer"
+                  icon="icons/evesim_stopServer_48x48.png"
+                  label="Stop Local Server"
+                  style="push">
+            </command>
+            <command
+                  commandId="EveSimViz.ImportFromFacebook"
+                  icon="icons/facebook-logo_48x48.png"
+                  label="Import from Facebook"
+                  style="push">
+            </command>
+         </toolbar>
+      </menuContribution>
+      <menuContribution
+            locationURI="menu:org.eclipse.ui.main.menu">
+         <menu
+               label="File">
+            <command
+                  commandId="org.eclipse.ui.newWizard"
+                  label="New File"
+                  style="push">
+            </command>
+            <command
+                  commandId="org.eclipse.ui.edit.text.openLocalFile"
+                  label="Open File"
+                  mode="FORCE_TEXT"
+                  style="push">
+            </command>
+            <command
+                  commandId="org.eclipse.ui.file.import"
+                  label="Import File"
+                  style="push">
+            </command>
+            <separator
+                  name="EveSimViz.separator1"
+                  visible="true">
+            </separator>
+            <command
+                  commandId="org.eclipse.ui.file.save"
+                  label="Save File"
+                  style="push">
+            </command>
+            <command
+                  commandId="org.eclipse.ui.file.saveAll"
+                  label="Save All"
+                  style="push">
+            </command>
+            <separator
+                  name="EveSimViz.separator2"
+                  visible="true">
+            </separator>
+            <command
+                  commandId="org.eclipse.ui.file.exit"
+                  label="Exit"
+                  style="push">
+            </command>
+         </menu>
+         <menu
+               label="About">
+            <command
+                  commandId="org.eclipse.ui.help.aboutAction"
+                  icon="icons/evesim_logo.ico"
+                  label="About EvESim"
+                  style="push">
+            </command>
+         </menu>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="*">
+         <newWizardShortcut
+               id="org.evesim.presentation.EvesimModelWizardID">
+         </newWizardShortcut>
+      </perspectiveExtension>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            class="org.evesim.gui.Perspective"
+            id="EvESim.perspective"
+            name="EvESim">
+      </perspective>
+   </extension>
+   <extension
+         id="EvESimProduct"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="EvESim.EvESimApp"
+            name="EvESim - Evolutionary Environment Simulator">
+         <property
+               name="windowImages"
+               value="icons/evesim_logo_16x16.png,icons/evesim_logo_32x32.png,icons/evesim_logo_48x48.png,icons/evesim_logo_64x64.png,icons/evesim_logo_128x128.png">
+         </property>
+         <property
+               name="aboutText"
+               value="As EvESim is a simulation framework running on digital ecosystem platforms, the term simulation is often used interchangeably with emulation or even testing framework.&#x0A;&#x0A;With the planned migration of the already service oriented implementation of EvESim to the currently developed OPAALS P2P system, EvESim will be one of the first running applications on top of this OPAALS infrastructure as well as on the Apache Tomcat based Soapod.&#x0A;&#x0A;Besides from that, the EvESimulator constitutes a collaborative platform for interdisciplinary research acting as a framework for understanding, visualising and presenting the social network concepts to contributors.">
+         </property>
+         <property
+               name="startupProgressRect"
+               value="0,135,744,15">
+         </property>
+         <property
+               name="appName"
+               value="EvESim - Evolutionary Environment Simulator">
+         </property>
+         <property
+               name="preferenceCustomization"
+               value="plugin_customization.ini">
+         </property>
+         <property
+               name="aboutImage"
+               value="icons/evesim_logo_128x128.png">
+         </property>
+      </product>
+   </extension>
+   <extension
+         id="EvESimApp"
+         name="Evolutionary Environment Simulator"
+         point="org.eclipse.core.runtime.applications">
+      <application
+            cardinality="singleton-global"
+            thread="main"
+            visible="true">
+         <run
+               class="org.evesim.gui.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            id="EvESim.contribution1"
+            objectClass="org.evesim.EveComponent">
+         <menu
+               icon="icons/24x24/Globe1.png"
+               id="EvESim.menu1"
+               label="EvESimulation"
+               path="additions">
+            <separator
+                  name="Location">
+            </separator>
+            <separator
+                  name="Edit">
+            </separator>
+         </menu>
+         <action
+               class="org.evesim.popup.actions.LookupCoordinatesAction"
+               enablesFor="1"
+               icon="icons/16x16/Binoculars.png"
+               id="EvESim.LookupCoordinatesAction"
+               label="Lookup Coordinates"
+               menubarPath="EvESim.menu1/Location">
+         </action>
+         <action
+               class="org.evesim.popup.actions.ResetEveComponentAction"
+               icon="icons/16x16/DeleteRed.png"
+               id="EveSimViz.resetSubCompoments"
+               label="Reset Components"
+               menubarPath="EvESim.menu1/Edit">
+         </action>
+         <action
+               class="org.evesim.popup.actions.ResetAllEveComponentsAction"
+               icon="icons/16x16/DeleteRed.png"
+               id="EveSimViz.resetAllComponents"
+               label="Reset All Components"
+               menubarPath="EvESim.menu1/Edit">
+         </action>
+      </objectContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+   </extension>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <primaryWizard
+            id="org.evesim.presentation.EvesimModelWizardID">
+      </primaryWizard>
+      <category
+            id="E"
+            name="EvESim">
+      </category>
+   </extension>
+
+</plugin>

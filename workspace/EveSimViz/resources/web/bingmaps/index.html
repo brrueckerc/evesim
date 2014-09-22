@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>SetCredentials</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<script type="text/javascript"
+	src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6.2"></script>
+<!-- <script type="text/javascript" src="evesimmaps.js"></script>  -->	
+
+<script type="text/javascript">
+         var map     = null;
+         
+         function GetMap() {
+            map = new VEMap('myMap');
+            map.AttachEvent("oncredentialserror", MyHandleCredentialsError);
+            map.SetCredentials("AkVSnD4hPs24YBg7ImPhF7PjjvczPwSH3Qz6iewu_ZxEmjxXB0JOiu_DJ_LJ89VA");   
+            map.LoadMap();  
+
+            AddMyLayer();     
+
+         }
+
+         function MyHandleCredentialsError() {
+            alert("The credentials are invalid.");
+         }
+
+         function AddMyLayer()
+         {
+        	 var geoRssLayer1 = new VEShapeLayer();
+        	 var geoRssLayerSpec1 = new VEShapeSourceSpecification(VEDataType.GeoRSS, "http://localhost:${webserver_port}/vml/bingmaps/georss.xml", geoRssLayer1);
+        	 map.ImportShapeLayerData(geoRssLayerSpec1, onFeed1Load, false);
+         }
+
+         function onFeed1Load(layer)
+         {
+              var numShapes = layer.GetShapeCount();
+              for(var i=0; i < numShapes; ++i)
+             {
+                 var s = layer.GetShapeByIndex(i);
+                 s.SetCustomIcon("http://localhost:${webserver_port}/default/earth/pic/pc.png");
+             }
+         }         
+
+          
+
+      </script>
+</head>
+<body onload="GetMap();">
+<div id='myMap'
+	style="position: relative; width: 1000px; height: 600px;"></div>
+</body>
+</html>

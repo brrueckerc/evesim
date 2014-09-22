@@ -1,0 +1,12 @@
+
+
+#if( $child.instanceOf("org.evesim.impl.EveConnectionImpl") )
+    <li>connected to <b>$child.getConnectedComponent().getName()</b></li>
+#else
+	<li><b>$child.getName()</b> ($child.getClass().getName() )</li>
+#end
+
+#foreach( $subchild in $child.getChildren() )
+    #set( $child = $subchild )    
+	#parse( "web/earth/earth_child.html" )
+#end

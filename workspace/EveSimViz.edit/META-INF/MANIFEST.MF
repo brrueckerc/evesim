@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: EveSimViz.edit;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-ClassPath: .
+Bundle-Activator: org.evesim.provider.EvesimEditPlugin$Implementation
+Bundle-Vendor: Salzburg University of Applied Sciences
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: org.evesim.monitor.provider,
+ org.evesim.msg.provider,
+ org.evesim.property,
+ org.evesim.provider,
+ org.evesim.timer.provider,
+ org.evesim.usecase.semanticSearch.provider,
+ org.evesim.usecase.socialNetworkAnalysis.provider
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.emf.edit;visibility:=reexport,
+ org.eclipse.equinox.http.jetty;bundle-version="2.0.0",
+ EvESim;bundle-version="1.0.0",
+ org.eclipse.ui,
+ org.eclipse.emf.edit.ui
+Bundle-ActivationPolicy: lazy
+Import-Package: org.eclipse.emf.edit.ui.provider,
+ org.mortbay.jetty;version="6.1.15"

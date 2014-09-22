@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="DocumentEditingService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <wsdl:types>
+        <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://ws.services.flypeer.ipti.org.br">
+            <xs:element name="documentEditingService">
+                <xs:complexType>
+                    <xs:sequence>
+                    	<xs:element minOccurs="0" name="session" nillable="true" type="xs:string"/>
+                        <xs:element minOccurs="0" name="type" nillable="true" type="xs:string"/>
+                        <xs:element minOccurs="0" name="agent" nillable="true" type="xs:string"/>
+                        <xs:element minOccurs="0" name="document" nillable="true" type="xs:string"/>
+                        <xs:element minOccurs="0" name="content" nillable="true" type="xs:string"/>
+                        <xs:element minOccurs="0" name="count" nillable="true" type="xs:int"/>
+                        <xs:element minOccurs="0" name="timestamp" nillable="true" type="xs:long"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="result">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="result" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+    </wsdl:types>
+
+    <wsdl:message name="documentEditingService">
+        <wsdl:part name="documentEditingService" element="documentEditingService"/>
+    </wsdl:message>
+
+    <wsdl:message name="result">
+        <wsdl:part name="result" element="result"/>
+    </wsdl:message>
+
+    <wsdl:portType name="DocumentEditingService">
+        <wsdl:operation name="documentEditingService">
+            <wsdl:input message="documentEditingService"/>
+            <wsdl:output message="result"/>
+        </wsdl:operation>
+    </wsdl:portType>
+
+    <wsdl:service name="DOCUMENT_EDITING_SERVICE">
+        <wsdl:documentation>This is a document editing service developed by Christoph Ruecker SUAS</wsdl:documentation>
+    </wsdl:service>
+</wsdl:definitions>

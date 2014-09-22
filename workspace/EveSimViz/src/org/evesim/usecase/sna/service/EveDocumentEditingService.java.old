@@ -1,0 +1,205 @@
+package org.evesim.usecase.sna.service;
+
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.Serializable;
+import java.io.Writer;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+import org.evesim.usecase.sna.EveDocument;
+
+import br.org.ipti.flypeer.model.BasicPeer;
+import br.org.ipti.flypeer.model.FlypeerRollbackListener;
+import br.org.ipti.flypeer.model.FlypeerServiceListener;
+import br.org.ipti.flypeer.services.FlypeerBusinessService;
+import br.org.ipti.flypeer.services.wsdl.WSDLFile;
+
+@WSDLFile(name = "DocumentEditingService.wsdl") 
+public class OldEveDocumentEditingService implements FlypeerBusinessService, FlypeerServiceListener, FlypeerRollbackListener {
+	private BasicPeer service_peer;
+	public ArrayList<EveDocument> documents;
+	private ArrayList<String> sessions;
+	private String result;
+
+	private final static Logger logger = Logger.getLogger(OldEveDocumentEditingService.class.getName());
+
+	@Override
+	public void clear(String message) {
+		try{
+			Iterator<String> it = this.sessions.iterator();
+			while(it.hasNext()){
+				String strDirectoy =it.next();
+				boolean success = (new File(strDirectoy)).mkdir();
+				if (success) {
+					//logger.log(Level.INFO,"Directory: " + strDirectoy + " created");
+				} 
+				else{
+					//logger.log(Level.INFO,"Directory: " + strDirectoy + " exists");
+				}
+			}
+
+		}catch (Exception e){//Catch exception if any
+			logger.log(Level.SEVERE,"Error occured: " + e.getMessage());
+		}
+		try{
+
+			Iterator<EveDocument> it = this.documents.iterator();
+			while(it.hasNext()){
+				EveDocument doc = it.next();
+				File file = new File(doc.getSessionID() + "\\" + doc.getName() + ".txt");
+				Writer output = new BufferedWriter(new FileWriter(file));
+				//				System.out.println(doc.getName());
+				//				System.out.println(doc.getContent());
+				output.write(doc.getContent());
+				output.flush();
+				output.close();
+				//logger.log(Level.INFO,"File: " + doc.getName() + " written");
+			}
+
+
+		}catch (Exception e) {
+			logger.log(Level.SEVERE,"Error: " + e.getMessage());
+		}
+		logger.log(Level.INFO,"Document Editing Service dumped files");
+
+	}
+
+	@Override
+	public FlypeerRollbackListener getRollbackListener() {
+		logger.log(Level.SEVERE,"Document Editing Service received rollback request");
+		return null;
+	}
+
+	@Override
+	public void start(BasicPeer peer) {
+		this.service_peer = peer;
+		this.documents = new ArrayList<EveDocument>();
+		this.sessions = new ArrayList<String>();
+		this.result = new String();
+	}
+
+	@Override
+	public void stop() {
+		logger.log(Level.SEVERE,"Document Editing Service received stop request");
+
+	}
+
+	@Override
+	public FlypeerServiceListener<?> getServiceListener() {
+		return this;
+	}
+
+	@Override
+	public Serializable serviceEvent(String arg0, String arg1, Map params) throws Exception {
+		//System.out.println(params);
+		String call_session = (String)params.get("session");
+		String call_type  = (String)params.get("type");
+		String call_agent = (String)params.get("agent");
+		String call_document_name = (String)params.get("document");
+		String call_document_content = (String)params.get("content");
+		Integer call_count = (Integer)params.get("count");
+		Long call_timestamp = Long.valueOf(params.get("timestamp").toString());
+		Long transaction_time = System.currentTimeMillis() - call_timestamp;
+
+		if(call_type.equals("CREATE")){
+			this.createDoc(call_session,call_document_name, call_document_content, call_agent, transaction_time);
+		}
+		else if(call_type.equals("EDIT")){
+			this.editDoc(call_session,call_document_name, call_document_content, call_agent, transaction_time);
+		}
+		else if(call_type.equals("DELETE")){
+			this.deleteDoc(call_session,call_document_name, call_document_content, call_agent, transaction_time);
+		}
+		else{
+			logger.log(Level.SEVERE,"Document Editing Service received an unknown call type");
+		}
+		
+		return result+ "," + call_timestamp + "," + call_count;
+	}
+
+	@Override
+	public void rollback(String arg0, String arg1, Map<String, Serializable> args) {
+		logger.log(Level.SEVERE,"Document Editing Service performed rollback with: " + args.toString());
+	}
+
+	public void createDoc(String session, String document_name, String doc_content, String creatingAgent, Long transaction_time){
+		Boolean exist = false;
+		for(int i = 0; i < this.documents.size(); i++){
+			if(this.documents.get(i).getName().equals(document_name)) {
+				logger.log(Level.INFO,"Document Editing Service document exists already");
+				this.result = "EXISTED";
+				exist = true;
+			}
+		}
+		if(exist == false){
+			this.documents.add(new EveDocument(session,creatingAgent, document_name, "Created", transaction_time));
+			this.sessions.add(session);
+			logger.log(Level.INFO,"Document Editing Service has created a document");
+			this.result = "CREATED";
+		}
+	}
+	public void editDoc(String session, String document_name, String doc_content, String editingAgent, Long transaction_time){
+		Boolean exist = false;
+		for(int i = 0; i < this.documents.size(); i++){
+			if(this.documents.get(i).getName().equals(document_name)) {
+				exist = true;
+				System.out.println(this.documents.get(i).isDeleted());
+				if(this.documents.get(i).isDeleted() == false){
+					this.sessions.add(session);
+					this.documents.get(i).addContent(doc_content,editingAgent, transaction_time);
+					this.result = "EDITED";
+					i = this.documents.size();
+				}
+				else if(this.documents.get(i).isDeleted() == true){
+					this.result = "EDIT FAILED DELETED";
+				}
+
+			}
+		}
+		//create doc if it doesn't exist
+		if(exist == false){
+			this.documents.add(new EveDocument(session,editingAgent, document_name, "Created " + doc_content, transaction_time));
+			this.sessions.add(session);
+			this.result = "CREATED EDIT";
+		}
+		logger.log(Level.INFO,"Document Editing Service has edited a document");
+}
+public void deleteDoc(String session, String document_name, String doc_content, String deletingAgent, Long transaction_time){
+	for(int i = 0; i < this.documents.size(); i++){
+		if(this.documents.get(i).getName().equals(document_name)) {
+			this.documents.get(i).setDeleted(true, deletingAgent, transaction_time);
+			i = this.documents.size();
+			this.result = "DELETED";
+		}
+		else{
+			this.result = "DELETED FAILED";
+		}
+	}
+	logger.log(Level.INFO,"Document Editing Service has deleted a document");
+}
+public static void main(String[] args){
+	OldEveDocumentEditingService serv = new OldEveDocumentEditingService();
+	serv.start(null);
+	serv.createDoc("1232", "doc_I", "first content", "AgentChris", new Long(83));
+	serv.editDoc("1232", "doc_I", "secondcontent", "AgentChris", new Long(83));
+	serv.createDoc("1232", "doc_II", "first content", "AgentChris", new Long(83));
+	serv.editDoc("1232", "doc_II", "secondcontent", "AgentChris", new Long(83));
+	serv.editDoc("1232", "doc_III", "secondcontent", "AgentChris", new Long(83));
+
+	serv.deleteDoc("1232", "doc_III", "secondcontent", "AgentChris", new Long(83));
+	serv.editDoc("1232", "doc_III", "secondcontent", "AgentChris", new Long(83));
+	//serv.createDoc("1232", "doc_I", "first content", "AgentChris", new Long(83));
+
+	Iterator<EveDocument> it = serv.documents.iterator();
+	while(it.hasNext()){
+		System.out.println(it.next().getContent());
+	}
+
+}
+
+}
